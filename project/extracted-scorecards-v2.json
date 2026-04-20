@@ -1,0 +1,1402 @@
+{
+  "ceo": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Own the 3-year strategic plan",
+        "desiredResult": "Hold and evolve the multi-year roadmap that ties brand, portfolio, channel mix, and margin profile together. Co-own the plan with the COO as peers; bring the CEO lens on brand, portfolio, and customer-facing growth. Partner with the Board, LT, and ownership on annual priorities and capital allocation.",
+        "successMetric": "Strategic plan documented, dated, and reviewed with LT quarterly. Annual priorities traceable to the plan. 90% of executive decisions reference the plan in writing. CEO-specific lens on the plan = brand, portfolio, and customer-facing channels.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own financial stewardship and owner alignment",
+        "desiredResult": "Hold enterprise P&L ownership jointly with the COO. Bring the CEO lens — brand revenue mechanisms, product margin, channel mix — to forecasting, capital allocation, and scenario modeling. Partner with Finance on the monthly close. Keep ownership fully informed.",
+        "successMetric": "Annual budget on time with scenario ranges. Monthly close reviewed with ownership within 15 business days. Gross margin at or above plan. CEO-specific metrics: brand revenue growth, DTC + retail + wholesale channel mix, product margin.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Represent Vosges externally",
+        "desiredResult": "Be the face of the brand with trade partners, press, key accounts, and the luxury and food community. Open doors the rest of the company can't. Partner with the COO when external relationships cross into manufacturing, private label, or co-packing.",
+        "successMetric": "≥12 strategic relationships actively cultivated in 2026. Each external commitment tied to a written expected outcome within 30 days. Zero public-facing miscommunications.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Hold leaders accountable to scorecards and OKRs",
+        "desiredResult": "Run the scorecard and OKR framework as a management system for the executive team. Review each direct report's scorecard quarterly. Hire, calibrate, coach, and hold the standard for the top layer of the organization. Build and retain A-player executives.",
+        "successMetric": "Every direct report has an active scorecard and quarterly coaching review. Off-track items get a dated recovery plan within 2 weeks. Executive seats filled with A-players within 90 days of vacancy. No direct report requires more than 2 hours/week of CEO escalation.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Drive brand-led revenue growth",
+        "desiredResult": "Own revenue growth through the Vosges brand, product portfolio, and customer-facing sales channels — DTC, retail boutiques, wholesale brand presence. Protect what Vosges means in the market while expanding commercial reach. Sponsor portfolio rationalization, channel expansion, and the product innovation roadmap.",
+        "successMetric": "Brand revenue at or above plan by channel. Zero launches that cannot articulate a brand rationale. Portfolio rationalization decisions traceable to CEO review. DTC, retail, and brand-led wholesale metrics owned end-to-end.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Long-horizon strategic thinking",
+      "Brand instinct paired with commercial discipline",
+      "Executive team building and succession",
+      "Financial fluency — P&L, capital structure, scenario modeling",
+      "External presence and trade-partner credibility",
+      "Restraint — governs the system rather than overriding it"
+    ],
+    "purpose": "set the company's strategic direction, steward the brand's identity and long-term value, and ensure Vosges Haut-Chocolat grows profitably while remaining true to its founding vision of chocolate as cultural and emotional experience.",
+    "jobDesc": "Define and hold the multi-year strategic roadmap. Co-own financial stewardship with the COO — P&L, capital structure, and investor/owner relationships. Build and lead the executive team. Act as the primary external face of the brand. Drive revenue growth through the brand, product, and customer-facing sales channels (DTC, retail, wholesale presence). Decide when to reweight the organization's focus across growth, operations, and brand.",
+    "note": "CEO scorecard focuses on STRATEGIC leadership, not day-to-day operations."
+  },
+  "coo": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Own the 3-year strategic plan",
+        "desiredResult": "Co-own the multi-year roadmap with the CEO as peers; bring the COO lens on operations, manufacturing capacity, supply chain, and production economics. Make sure every strategic commitment has an operations and capacity answer behind it.",
+        "successMetric": "Strategic plan documented, dated, and reviewed with LT quarterly. 90% of executive decisions reference the plan in writing. COO-specific lens = manufacturing capacity, supply chain readiness, production economics, and B2B/co-manufacturing channel enablement.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own financial stewardship and owner alignment",
+        "desiredResult": "Hold enterprise P&L ownership jointly with the CEO. Bring the COO lens — production efficiency, lean manufacturing practices, COGS, fulfillment cost — to forecasting and capital allocation. Partner with Finance on the monthly close. Protect enterprise gross margin through costing accuracy, purchase discipline, and yield improvement.",
+        "successMetric": "Annual budget on time with scenario ranges. Monthly close reviewed with ownership within 15 business days. Gross margin at or above plan by channel. COO-specific metrics: production efficiency, lean manufacturing gains, COGS variance, fulfillment cost per order. Zero major margin surprises after month-close.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Represent Vosges externally",
+        "desiredResult": "Be the company's external face for manufacturing, private label, co-packer, and B2B relationships. Partner with the CEO on relationships that cross brand, retail, and trade. Represent Vosges in industry, regulatory, and capability-partner forums.",
+        "successMetric": "≥8 strategic manufacturing/private-label/co-packer relationships actively cultivated in 2026. Each external commitment tied to a written expected outcome within 30 days. Zero public-facing miscommunications.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Hold operating leaders accountable to scorecards and OKRs",
+        "desiredResult": "Run the scorecard and OKR framework as a management system for the operating leadership — Director of Operations, Head of Technology, and the full operating bench. Review each direct report's scorecard quarterly. Own the end-to-end customer fulfillment promise — lead times, ship dates, quality, service recovery. Sponsor the 3–5 capability build-outs the next chapter requires (B2B infrastructure, forecasting, BOMs 2.0, data integration, SQF).",
+        "successMetric": "Every direct report has an active scorecard and quarterly coaching review. Off-track items get a dated recovery plan within 2 weeks. OTIF at or above target by channel every month. Customer-facing failures tracked and trending down QoQ. Capability portfolio published and reviewed quarterly; each project has owner, dated outcome, and stop-or-finish gate.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Drive manufacturing-led revenue growth",
+        "desiredResult": "Own revenue growth through Vosges' manufacturing and production capabilities — private label, co-packer partnerships, B2B manufacturing capacity. Monetize the factory when it isn't making Vosges-branded product. Partner with the Wholesale & Private Label Sales seat on opportunity cycles. Protect Vosges-brand capacity commitments while growing manufacturing revenue.",
+        "successMetric": "Private-label + co-packer + manufacturing-capacity revenue at or above plan. Capacity utilization at or above target without harming branded OTIF. Every private-label commitment reviewed by COO before sign. Manufacturing-channel pipeline reviewed quarterly with ownership.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Operating-system thinking — building cadence and holding it",
+      "Cross-functional leadership across Ops, Tech, and Customer",
+      "Financial and margin discipline",
+      "Candor in accountability conversations",
+      "Ability to hold complexity without collapsing into doing the work",
+      "Strategic patience — installing systems that outlast any single leader"
+    ],
+    "purpose": "operationalize enterprise strategy — make sure the company delivers on what it promises customers, keeps unit economics healthy, and holds every operational leader accountable to a shared set of plans, numbers, and cadences.",
+    "jobDesc": "Own execution across Operations, Supply Chain, Quality, Customer Service, and Technology. Co-own financial stewardship with the CEO as peers. Drive revenue growth through the company's manufacturing and production capabilities — private label, co-packer relationships, and B2B manufacturing capacity. Hold operating leaders to their scorecards. Protect margin and reliability while the company grows.",
+    "note": "COO scorecard focuses on STRATEGIC operating leadership — building the operating system, not doing the work."
+  },
+  "dir-ecom": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Hit the DTC revenue plan",
+        "desiredResult": "Own the DTC number. Build and run the merchandising and promotional calendar. Balance acquisition investment against retention. Report weekly against plan.",
+        "successMetric": "DTC revenue at or above plan by quarter. Conversion rate trending up YoY. AOV at or above plan. Monthly variance analysis documented and reviewed.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Hold the 12–18 month product roadmap",
+        "desiredResult": "Partner with the Senior Product Manager on a published roadmap that reflects strategic priorities (holiday, grab-and-go, wholesale, B2B). Update quarterly; balance portfolio load against team capacity.",
+        "successMetric": "Roadmap reviewed with LT quarterly. Every active concept has a named Stage-Gate status. Portfolio load balanced against capacity with no stuck concepts.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Steward brand voice end-to-end",
+        "desiredResult": "Partner with Art Director, Marketing Manager, and CEO on brand-voice consistency across every touchpoint — site, email, packaging, paid, PR. Catch drift early.",
+        "successMetric": "Brand voice guidelines documented and referenced in every creative brief. Quarterly brand audit across channels. Zero publicly-documented off-brand incidents in 2026.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Land the 2026 launch calendar on time, on brand, on margin",
+        "desiredResult": "Drive Holiday 2026, grab-and-go, and seasonal launches through the org. Own cross-functional readiness — Marketing, Sales, Ops, Fulfillment — for every launch.",
+        "successMetric": "Holiday 2026 shipped on schedule with ≥95% of SKUs hitting planned launch date. Post-launch readiness score ≥4/5 from functional partners across every launch.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Run peak-season without operational failure",
+        "desiredResult": "Partner with Operations, NPD, and Customer Service on peak-period readiness. Pre-plan capacity, communicate cutoffs early, hold the line when the calendar says hold.",
+        "successMetric": "Holiday and Mother's Day peaks run within plan. OTIF ≥ target through peak. Zero high-profile CX failures. Post-peak debrief documented with learnings captured.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "DTC e-commerce leadership on Shopify Plus",
+      "Brand + product + commercial fluency in a single seat",
+      "Merchandising, CRO, and retention discipline",
+      "Cross-functional leadership across creative, commercial, and operations",
+      "Data literacy — reads Shopify + GA + retention cohorts",
+      "Calm in peak-season pressure"
+    ],
+    "purpose": "lead Vosges' direct-to-consumer Ecom + Brand engine — owning the commercial narrative, product roadmap, and customer experience that turn the Vosges story into profitable revenue.",
+    "jobDesc": "Own the DTC number. Steward brand voice end-to-end. Lead the product roadmap through the Senior Product Manager. Partner with the Chef / R&D Director on creative innovation. Run the marketing calendar through Marketing, Performance Marketing, and Art Direction. Run Shopify Plus DTC through the Ecom Manager. Hit revenue while protecting the brand experience.",
+    "note": "Consolidated leadership of Brand, Product, and DTC Ecom under a single accountable seat."
+  },
+  "dir-sales": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Establish and lead the B2B Sales organization structure",
+        "desiredResult": "Build the foundation — Sales Ops support, defined roles (Sales Account Manager, Junior AM, Wholesale & Private Label), team cadences, and communication protocols. Keep salespeople focused on selling.",
+        "successMetric": "B2B Sales org fully operational with clear accountability. Salespeople focused exclusively on selling and relationships, not troubleshooting fulfillment.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Partner with Director of Operations on SLAs",
+        "desiredResult": "Define mutual commitments between Sales and Operations — lead times, cutoffs, escalation protocols, capacity constraints. Co-lead the weekly Sales & Ops meeting.",
+        "successMetric": "Documented SLAs in place and honored by both sides. Weekly Sales & Ops meeting running with structured agenda. Zero surprise fulfillment failures from miscommunication.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Reconfigure HubSpot for B2B",
+        "desiredResult": "Partner with Head of Technology to rebuild HubSpot with proper pipelines, stages, required fields, and win/loss tracking that gives leadership a real-time view of revenue at risk.",
+        "successMetric": "B2B pipeline live with win/loss tracking. Weekly reporting on pipeline health, conversion, and revenue at risk. Loss reasons captured on 100% of closed-lost deals.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Establish standardized B2B offering and sales materials",
+        "desiredResult": "No standardized B2B offering exists today. Establish it in 2026 — approved configurations, customization rules, lead times, MOQs, and pricing. Create collateral that enables confident selling within approved bounds. Partner with Senior Product Manager on what's buildable and with Operations on what's fulfillable.",
+        "successMetric": "Published B2B catalog/menu live in 2026. Salespeople can confidently commit to what we can fulfill. Ad-hoc customization requests escalated through the Director of Sales, not improvised. Zero fulfillment-risk configurations shipped.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Protect B2B revenue through risk management",
+        "desiredResult": "Build the visibility and cadence that flags at-risk orders before the customer feels it. Real-time revenue-at-risk view for leadership.",
+        "successMetric": "Fulfillment-driven sales losses down 50% vs H2 2025. Risks flagged ≥48 hours ahead of customer impact. Zero escalations requiring CEO intervention.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "B2B sales leadership with cross-functional influence",
+      "Process improvement and systems thinking",
+      "Data-driven / analytical mindset",
+      "Strong written and verbal communicator",
+      "CRM fluency (HubSpot preferred)",
+      "Balances client advocacy with operational realities"
+    ],
+    "purpose": "lead the B2B Sales organization — ensuring salespeople have the tools, processes, and support they need to capture and protect revenue, with end-to-end accountability from sale capture through fulfillment.",
+    "jobDesc": "Build and lead the B2B Sales organization, starting with Corporate Gifting and extending into Wholesale and Private Label. Partner with Director of Operations on SLAs and co-lead weekly Sales & Ops meetings. Reconfigure HubSpot for B2B pipeline management and win/loss tracking. Develop standardized product offerings and sales materials. Keep salespeople focused on selling while the organization delivers on every commitment.",
+    "note": ""
+  },
+  "regional-gm": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Hit retail revenue + margin plan",
+        "desiredResult": "Own the multi-unit P&L across Oakley and the two O'Hare boutiques. Manage labor cost. Hit contribution margin by unit. Report weekly against plan with variance commentary. Honor the Oakley transition plan as it unfolds.",
+        "successMetric": "Retail revenue at or above plan by unit. Labor-as-percent-of-revenue within target. Contribution margin at or above plan by unit. Weekly variance readout delivered on time.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Grow foot traffic and transaction value at O'Hare",
+        "desiredResult": "Make the O'Hare boutiques the company's highest-performing retail square footage. Partner with Ivana on visual merchandising, assortment, and the airport-appropriate experience (food-handling regs prevent open sampling; build the theatre a different way). Optimize for impulse and gifting.",
+        "successMetric": "O'Hare foot traffic up YoY. Transaction value up YoY per boutique. Assortment reviewed quarterly with sell-through data. Weekly readout on both airport units delivered on time.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Use airport boutiques as brand amplifiers for e-com",
+        "desiredResult": "Convert airport customers — non-Chicago travelers — into recurring Vosges e-commerce customers. Build the in-boutique mechanics (QR, receipt-to-cart, in-bag inserts, post-purchase flows) that make one airport purchase trigger at least one subsequent e-com order. Partner with Ecom Manager and Performance Marketing on the measurement loop.",
+        "successMetric": "Target: every O'Hare customer places at least one e-commerce order after their boutique visit. Airport-attributed e-com order rate measured monthly and trending up QoQ. Conversion loop documented and reviewed with Ecom and Performance Marketing quarterly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Build the retail leadership pipeline",
+        "desiredResult": "Develop Ivana and boutique leads into stronger managers. Name successors per unit. Make careers at Vosges real for the retail bench — especially as the O'Hare footprint becomes the strategic center.",
+        "successMetric": "Every boutique has a named, ready-in-6-months successor. Internal-fill rate on boutique manager openings ≥70%. Development plans active for Ivana and all boutique leads.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Run retail food safety without compromise",
+        "desiredResult": "FIFO, climate, sanitation at every unit. Train, audit, and enforce — with airport-specific requirements baked in.",
+        "successMetric": "Zero climate-related product losses. Zero customer-facing food safety incidents. Audit score ≥ standard every quarter across all three boutiques.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Multi-unit retail leadership",
+      "Luxury or experiential retail instinct",
+      "Unit-level P&L management",
+      "Hiring, training, and succession in a hospitality environment",
+      "Food-safety and climate-control fluency",
+      "Partnership orientation with Product and Sales"
+    ],
+    "purpose": "own retail sales performance across the Vosges boutiques — Oakley and the two O'Hare airport locations — and convert the airport customer base into a brand-amplification engine that drives future e-commerce orders from non-Chicago travelers.",
+    "jobDesc": "Drive revenue, margin, and transaction value across the boutiques. Hire, train, and develop boutique leadership. Lead the airport strategy — turning every O'Hare traveler into a future Vosges e-commerce customer. Own climate control, food safety, and stock rotation at retail. Coordinate with Oakley leadership on the transition plan (Oakley closure is likely).",
+    "note": "Title updated from 'Regional General Manager' on 2026-04-18. All stores are in the same city; 'Regional' did not fit. Role now explicitly centers on driving retail sales performance across the Oakley boutique and the two O'Hare airport boutiques (Ivana is the O'Hare lead; she reports here)."
+  },
+  "hr-manager": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Steward the scorecard-and-OKR operating system",
+        "desiredResult": "Train managers on scorecards, OKRs, and 1:1s. Make every leader use them — not as a document, as a practice. Partner with the COO and CEO on rollout.",
+        "successMetric": "100% of LT on active scorecards with quarterly coaching. Manager certification on the system completed by Q2. Monthly adoption report to LT.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own talent acquisition end-to-end",
+        "desiredResult": "Build a repeatable intake-to-onboarding process with hiring scorecards per role. Own sourcing, screening, candidate experience, and offer.",
+        "successMetric": "90-day new-hire retention ≥90%. Time-to-fill within target by role. Hiring manager satisfaction ≥4/5 across offers made.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Launch and run Vosges Passport",
+        "desiredResult": "Cross-training program tracked by station and function. Every critical role has a named backup.",
+        "successMetric": "Every critical station ≥2 deep on trained staff. Passport tracked live in the HR system. Zero single-point-of-failure roles by year-end.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Own compliance, benefits, payroll oversight",
+        "desiredResult": "EEOC, FLSA, FMLA, benefits administration, and payroll accuracy. Partner with Finance on payroll close.",
+        "successMetric": "Zero compliance findings in 2026. Benefits enrollment completed on calendar. Payroll errors ≤0.5% of runs.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Lead the culture shift Old Co → New Co",
+        "desiredResult": "Coach leaders through hard conversations. Shape the rituals, recognition, and communication that reinforce accountability culture.",
+        "successMetric": "Leadership pulse-check trending up quarter-over-quarter. Exit-interview themes visibly addressed. Cultural initiatives documented and tracked.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "HR leadership in a manufacturing + commercial environment",
+      "Talent acquisition and development",
+      "Compliance and benefits fluency",
+      "Coaching skill — can sit with leaders in hard conversations",
+      "Organizational design and change management",
+      "High-integrity communicator"
+    ],
+    "purpose": "build and steward Vosges as a place where people can do the best work of their careers — owning talent acquisition, onboarding, development, compliance, culture, and the operating system of people management (scorecards, 1:1s, reviews).",
+    "jobDesc": "Own end-to-end people operations: recruiting, onboarding, benefits, payroll oversight, compliance, performance management, and culture. Act as partner for every leader on scorecards, coaching, and organizational design. Own the cross-training and capability roadmap.",
+    "note": "Connective service — reports to CEO, serves every function."
+  },
+  "sr-product-mgr": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Establish the 12–18 month product roadmap",
+        "desiredResult": "Build the product roadmap — it does not yet exist. Publish the first full version by end-of-2026. Balance load against team capacity. Communicate changes clearly to LT and functional partners.",
+        "successMetric": "First published roadmap live by Q3 2026. Full 12–18 month roadmap reviewed with LT quarterly by EOY 2026. Every active concept has a named Stage-Gate status. Roadmap-to-capacity ratio within plan.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own Stage-Gate end-to-end, including the taste-test program",
+        "desiredResult": "Every concept, every gate, right stakeholders, right data, go/no-go decision. Kill concepts that shouldn't move forward. Run the taste-test program — internal and customer panels with structured capture, absorbed from the Chef seat in 2026 so data, not opinion, drives go/no-go.",
+        "successMetric": "Stage-Gate throughput improving quarterly. Go/no-go decisions made on schedule with documented rationale. Post-launch post-mortems completed within 30 days. Every Stage-2+ concept taste-tested with panel data captured in the NPD system.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Deliver Holiday 2026 and grab-and-go",
+        "desiredResult": "On-time, on-spec, on-margin delivery of both portfolios. Own cross-functional readiness for every launch in the calendar.",
+        "successMetric": "≥95% launch-date attainment across 2026. Holiday 2026 shipped to schedule. Grab-and-go live at O'Hare by peak travel.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Build the NPD three-seat unit",
+        "desiredResult": "Operate as one engine with the Chef / R&D Director and the Product Operations Specialist. Make handoffs seamless end-to-end. Respect the division: SrPM owns roadmap, Stage-Gate, and taste-tests; Chef owns recipe + R&D team coaching; Product Ops owns BOMs and data.",
+        "successMetric": "Zero concepts stalled at handoff. Stage 3→4 cycle time down vs 2025 baseline. Three-seat team on weekly cadence.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Run pre-launch cross-functional readiness",
+        "desiredResult": "Brief launches 2+ weeks ahead of ship. Hold a go/no-go gate with Marketing, Sales, Ops, and Fulfillment.",
+        "successMetric": "Launch readiness score ≥4/5 from functional partners on every launch. Zero launches missing cross-functional sign-off.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "NPD leadership in CPG or food",
+      "Stage-Gate process discipline",
+      "Cross-functional leadership — creative, technical, commercial",
+      "Financial literacy — margin, BOM, pricing",
+      "Portfolio and roadmap thinking",
+      "Clear written and verbal communication under deadline"
+    ],
+    "purpose": "lead New Product Development for Vosges — owning the portfolio strategy, product roadmap, and Stage-Gate process, and partnering with Chef / R&D Director and Product Operations to bring new products to market on time, on brand, and on margin.",
+    "jobDesc": "Establish and hold the 12–18 month product roadmap. Own Stage-Gate end-to-end, including the taste-test program. Partner with the Chef / R&D Director on recipe and feasibility (Chef retains R&D team coaching), with Product Operations on BOMs/MRP/data, and with Marketing and Sales on launch. Be the single accountable person for every product from concept to launch.",
+    "note": "Peer to Chef / R&D Director; both report to Director of Ecom."
+  },
+  "perf-marketing": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Hit blended ROAS target",
+        "desiredResult": "Own paid social, search, and display. Drive daily channel optimization. Report weekly against target with channel-by-channel variance.",
+        "successMetric": "Blended ROAS at or above plan quarterly. Channel-level ROAS within target. Weekly reporting delivered on time.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Grow paid customer acquisition",
+        "desiredResult": "Scale new-customer acquisition within target CAC. Test creative and audiences on a weekly cadence.",
+        "successMetric": "New customers acquired at or above plan quarterly. CAC at or below target. Test velocity ≥4 experiments/month.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Own attribution and measurement",
+        "desiredResult": "Build the attribution model. Enforce tagging discipline. Reconcile paid reporting with Shopify revenue monthly.",
+        "successMetric": "Monthly paid-vs-actual revenue variance ≤5%. Attribution model documented and reviewed quarterly. Zero tagging gaps on active campaigns.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Optimize landing and funnel conversion",
+        "desiredResult": "Partner with the Ecom Manager on CRO. Test copy, creative, and page variants continuously.",
+        "successMetric": "Conversion rate up YoY on paid traffic. Funnel-stage dropoff down QoQ. Testing backlog always populated.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Protect peak-season efficiency",
+        "desiredResult": "Pre-plan peak spend and creative. Avoid last-minute panic buying. Lock peak creative 30 days ahead.",
+        "successMetric": "Peak ROAS at or above non-peak baseline. Zero rushed peak creative. Peak spend delivered within plan.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Paid-media leadership (Meta, Google, programmatic)",
+      "CRM and email attribution fluency",
+      "Analytics stack literacy (GA4, Shopify, attribution tools)",
+      "Agency and vendor management",
+      "Pragmatic reporting — tells the real story",
+      "Promo-discipline instinct — protects margin"
+    ],
+    "purpose": "own paid acquisition, CRM performance, and attribution analytics for Vosges DTC — turning marketing spend into measurable, margin-positive revenue while protecting the brand experience.",
+    "jobDesc": "Own paid media (Meta, Google, programmatic), SEO, affiliate, and CRM performance. Run attribution and cohort analysis. Manage external partners and vendors. Partner with Marketing Manager on campaign activation and with Ecom Manager on site conversion. Protect blended ROAS and contribution margin.",
+    "note": "Performance-focused counterpart to the Marketing Manager (brand + content side)."
+  },
+  "ecom-mgr": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Hit the Shopify Plus DTC plan",
+        "desiredResult": "Own site merchandising, promo execution, and daily trading rhythm. Partner with Performance Marketing on traffic quality.",
+        "successMetric": "DTC revenue at or above plan monthly. Site trading reviewed daily. Variance commentary documented weekly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own the sales-related technology stack",
+        "desiredResult": "Own the technology the company uses to take in sales — Shopify (DTC + retail instances + B2B), Zest, ShipperHQ, checkout and order-capture integrations. Partner in close collaboration with Customer Tech Operations, who owns the customer-support side (Gorgias, HubSpot). Be the accountable seat when a sale fails to land cleanly for any reason traceable to the tech stack.",
+        "successMetric": "Zero customer-facing failures attributable to the sales tech stack by Q3. Stack inventory current with named owner per tool. Quarterly stack health review held with Customer Tech Ops. Peak-period lock-down documented and honored.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Own the merchandising calendar",
+        "desiredResult": "Site pages, collections, hero assets, pricing updates shipped on calendar date. Partner with Marketing and Art on creative.",
+        "successMetric": "100% merch updates shipped on date. Zero missed creative handoffs. Calendar published 90 days out.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Grow conversion and AOV",
+        "desiredResult": "A/B test continuously. Partner with Performance Marketing on funnel. Own upsell, cross-sell, and cart optimization.",
+        "successMetric": "Conversion rate up YoY. AOV at or above plan. Test velocity ≥2 experiments/month on site.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Support B2B Shopify launch",
+        "desiredResult": "Own the DTC-side catalog, tax, and account-data integrity for the B2B launch. Partner with Director of Sales on requirements.",
+        "successMetric": "B2B Shopify live May 1, 2026 with bare-bones feature set. Catalog and tax validated. Zero data-integrity incidents in first 30 days.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Shopify Plus administration fluency",
+      "Merchandising and CRO discipline",
+      "Product data integrity",
+      "Cross-functional partnership with Marketing, Tech, and Ops",
+      "Peak-season calm under pressure",
+      "Attention to detail without losing the big picture"
+    ],
+    "purpose": "run the day-to-day of the Vosges Shopify Plus storefront — merchandising, site operations, conversion optimization, and peak-period readiness — so every customer has a reliable, on-brand shopping experience.",
+    "jobDesc": "Own Shopify Plus day-to-day: product data, collections, merchandising, site content, pricing, promo setup, and peak-period readiness. Own the sales-related technology stack end-to-end — Shopify, Zest, ShipperHQ and order-capture integrations. Partner with Customer Tech Operations, who owns the customer-support side of the stack (Gorgias, HubSpot service integrations). Drive conversion rate and AOV.",
+    "note": "Operational counterpart to the Director of Ecom — the hands on Shopify every day."
+  },
+  "marketing-mgr": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Deliver the 2026 campaign calendar",
+        "desiredResult": "Build, publish, and execute the full calendar. Brief creative, CRM, paid, and organic on every campaign with 2+ weeks of runway.",
+        "successMetric": "100% of campaigns launch on calendar date. Every campaign has a briefed hero asset and CRM plan. Post-campaign analysis completed on major campaigns.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Grow email as a margin-friendly channel",
+        "desiredResult": "Own segmentation, lifecycle flows (welcome, post-purchase, winback), and promo email. Partner with Ecom on merchandising integration.",
+        "successMetric": "Email revenue share at or above plan. Lifecycle flows live and optimized. List health improving (deliverability, unsub rate).",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Manage organic and SEO authority",
+        "desiredResult": "Partner with Performance Marketing on channel rebalance. Grow organic traffic YoY through content and technical SEO.",
+        "successMetric": "Organic sessions up YoY. Keyword rank improving on priority terms. Content calendar maintained.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Support NPD launches",
+        "desiredResult": "Brief launches 2+ weeks ahead. Own hero assets, PR, influencer outreach, and launch email sequence per launch.",
+        "successMetric": "Zero launches shipped without hero assets, PR plan, and launch email. Launch-day engagement at or above benchmark.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Steward brand voice in execution",
+        "desiredResult": "Reference brand guidelines in every brief. Run quarterly audits across channels.",
+        "successMetric": "Zero off-brand incidents in 2026. Quarterly brand audits documented. Brief template includes brand-voice checkpoint.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Integrated campaign planning",
+      "Editorial and content leadership",
+      "Social, PR, and influencer fluency",
+      "Strong brand and editorial instincts",
+      "Cross-functional collaboration with creative, commerce, and NPD",
+      "Calm in seasonal pressure"
+    ],
+    "purpose": "plan and execute the marketing calendar — campaigns, content, email, and brand storytelling — so the right audiences hear the right story at the right time, and commercial partners have the air cover they need to hit their numbers.",
+    "jobDesc": "Own campaign strategy across seasonal launches (Valentine's, Easter, Mother's Day, Holiday) and evergreen brand storytelling. Run email content, social, PR, and influencer. Partner with Art Director on creative and with Performance Marketing Manager on paid and CRM performance. Partner with Product on launch marketing. Protect the brand voice end-to-end.",
+    "note": "Brand + content counterpart to Performance Marketing Manager."
+  },
+  "art-director": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Steward the Vosges visual system and Brand Expression tiers",
+        "desiredResult": "Own the design system, component library, brand standards, and the three-tier Brand Expression framework (Dark / Milk / White) that governs how Vosges visuals flex across contexts. Update quarterly as the brand evolves. Partner with the Director of Ecom on brand-voice consistency.",
+        "successMetric": "Design system documented and adopted across Marketing, Ecom, Packaging, and Retail. Component library maintained. Brand Expression tier guidance published and referenced in briefs. Quarterly updates shipped on calendar.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Deliver 2026 campaign and launch creative",
+        "desiredResult": "Hero assets for every campaign and launch, briefed and delivered on calendar date. Partner with Marketing and Product on direction; partner with Parent Campaign leads (Marketing, Design, Performance) on sequencing and channel deployment.",
+        "successMetric": "100% creative delivered on calendar date. Zero launches missing hero assets. Creative quality score ≥4/5 from internal review.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Extend the PM system to packaging direction",
+        "desiredResult": "Partner with Product and NPD on packaging architecture. Extend the creative-team PM system (ClickUp-based, with Parent Campaign → Strategy → Copywriting → Design → Scheduling roles documented by the Senior Designer) to cover packaging templates — domestic + international. Protect brand expression through structure, material, and print.",
+        "successMetric": "Zero off-brand packaging shipped. Packaging templates (domestic + international) in use on 100% of 2026 launches. Pre-launch packaging review completed on 100% of launches. Packaging library maintained in the PM system.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Manage designer bench with holistic workload visibility",
+        "desiredResult": "Hold scorecards for the Senior Designer, Designer, and contract bench. Run the creative team with holistic visibility into workload — no blind allocation. Use the PM system to balance load and protect craft quality. Calibrate quality weekly.",
+        "successMetric": "Creative output up QoQ at standard quality. Senior Designer and Designer on active scorecards. Contract bench active and productive. Workload visibility dashboard reviewed weekly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Protect peak-season creative capacity",
+        "desiredResult": "Pre-plan peak asset load across Valentine's, Mother's Day, Holiday. Commission external bench before panic sets in. Lock scope and scale intentionally.",
+        "successMetric": "Peak assets delivered on schedule. Zero rushed peak creative. Contract commitments locked 60 days ahead.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Brand-first art direction",
+      "Packaging design discipline",
+      "Photography art direction",
+      "Design-team leadership",
+      "Agency and freelance management",
+      "Instinct for when to evolve the brand vs. hold the line"
+    ],
+    "purpose": "own the creative voice and visual identity of the Vosges brand — directing photography, design, and packaging art across every customer touchpoint so the brand is instantly recognizable and emotionally resonant.",
+    "jobDesc": "Direct the visual brand across packaging, site, email, paid, retail, and PR. Manage a small internal design team plus contracted senior creative support. Run photo art direction. Partner with Marketing Manager on campaign creative and with Product on packaging design. Evolve the brand identity without breaking it.",
+    "note": "Creative authority; peer to Marketing Manager under Director of Ecom."
+  },
+  "sr-designer": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Lead hero campaign and launch creative",
+        "desiredResult": "Own design execution for every 2026 hero launch — packaging, campaign assets, brand extensions. Deliver ready-for-production files on calendar date.",
+        "successMetric": "100% of hero launches shipped on calendar. Zero launches missing senior creative leadership. Creative quality score ≥4/5 from internal review.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own packaging design execution",
+        "desiredResult": "Lead packaging from concept through dieline, proofing, and print release. Partner with Procurement and vendors on production.",
+        "successMetric": "All packaging released on calendar date. Zero production reprints from design error. Packaging library kept current in the design system.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Operate the creative PM system and elevate the design system",
+        "desiredResult": "Own the creative team's PM system in ClickUp — the Parent Campaign / Strategy / Copywriting / Design / Scheduling structure documented across the Art Director's direction. Partner with Art Director to expand and maintain the brand-system library — typography, color, component patterns, templates — and to ensure every project flows through the PM structure without blind allocation.",
+        "successMetric": "PM system live and in use on 100% of creative projects in 2026. Design system usage up QoQ. Component library additions shipped each quarter. Design-system adoption across Marketing, Ecom, Product, and Retail.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Mentor the Designer",
+        "desiredResult": "Hold regular craft reviews with the Designer. Pair on advanced packaging and print work. Unblock the Designer's documented ramp progress on the Designer scorecard. Build the seat into a full production contributor.",
+        "successMetric": "Designer craft progression tracked and improving each quarter. At least 2 advanced projects co-led per quarter. Designer ramp milestones hit on schedule per the Designer scorecard.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Protect peak-season quality",
+        "desiredResult": "Plan senior creative capacity across Valentine's, Mother's Day, and Holiday peaks. Lock scope and scale up intentionally, not reactively.",
+        "successMetric": "Peak creative delivered on schedule with zero last-minute rework. 60-day commitment locked ahead of each peak. Quality maintained or improved YoY.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Senior-level craft across packaging, campaign, and brand",
+      "Print and production discipline — dielines, specs, vendor fluency",
+      "Design-system thinking — component patterns, templates, scale",
+      "Creative mentorship and craft coaching",
+      "Ownership from concept through production release",
+      "Holds the quality bar under peak-season pressure"
+    ],
+    "purpose": "be the senior creative executor on the Vosges design team — leading hero campaign, packaging, and brand-system work under the Art Director. Raise the quality ceiling on every piece of creative that ships and mentor the Designer through higher-complexity work.",
+    "jobDesc": "Lead execution of high-visibility creative: hero campaign assets, packaging, brand-system evolution, seasonal launches. Partner with Art Director on creative direction and with Marketing, Product, and Photography on delivery. Set the craft bar for the design team and coach the Designer on advanced packaging and print work.",
+    "note": "Senior IC under Art Director. Currently filled by Alyssa Welch on contract. Intent: convert to FTE. Peer to Designer; partners with Marketing and Product on hero campaign and packaging work."
+  },
+  "designer": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Print + packaging ramp",
+        "desiredResult": "Develop advanced expertise in print and packaging — production processes, materials, dielines, and vendor collaboration. Graduated ramp over 6 months: Observation → Participation → Full Ownership.",
+        "successMetric": "Month 1 observation complete. Month 2 participating in vendor comms. Months 3–6 fully handling packaging projects. At least 2 packaging projects owned end-to-end by Q3.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Output and turnaround",
+        "desiredResult": "Increase productivity and output speed by improving prioritization, workflow planning, and deadline management. Maintain quality standards while moving faster.",
+        "successMetric": "Reduce average turnaround time on standard tasks by 15–25% within 3 months (e.g., routine email designs from 3 days → 2–2.5 days).",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Communication",
+        "desiredResult": "Strengthen clarity and consistency in communication. Proactive updates, timely risk flagging, and clear summaries of decisions and next steps.",
+        "successMetric": "Weekly written status updates on all active projects. Risks flagged ≥48 hours before deadlines. Team lead looped in on external vendor comms and key in-house projects.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Collaboration",
+        "desiredResult": "Strengthen cross-functional collaboration by proactively engaging internal departments and external vendors throughout the design process.",
+        "successMetric": "Initiate and lead direct communication with vendors/in-house departments on at least 3–5 projects over the next three months.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Systems thinking",
+        "desiredResult": "Design beyond a single deliverable — build cohesive, scalable visual systems that work across formats, channels, and time.",
+        "successMetric": "Develop at least one scalable visual system (campaign, packaging line, or template set) adopted by the broader team. Lead internal and vendor comms and own the timeline.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Brand-aligned execution across digital and print",
+      "Prioritization, deadline management, and output discipline",
+      "Proactive communication with team and vendors",
+      "Cross-functional collaboration",
+      "Growing fluency in print and packaging production",
+      "Systems thinking — scalable templates and component sets"
+    ],
+    "purpose": "be the day-to-day design executor across Vosges touchpoints — email, site, social, packaging support, and brand extensions. Grow toward senior-level ownership of print and packaging by the end of 2026 through a structured ramp with the Art Director.",
+    "jobDesc": "Execute brand-aligned design across campaign, email, social, site, and supporting packaging work. Partner with the Art Director and Senior Designer on hero projects. Develop advanced craft skills in print and packaging on a staged ramp. Communicate proactively with internal stakeholders and external vendors.",
+    "note": "Full alignment with Senior Designer's Figma process doc deferred per 2026-04-18 meeting. Scorecard below keeps the ramp-plan structure; formal revision pending Figma review."
+  },
+  "chef-rd": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Deliver the R&D pipeline on-time, on-brand",
+        "desiredResult": "Move assigned concepts from prototype to Stage 4 on Stage-Gate timelines. Own full technical handoff to Product Operations on every concept — recipe, BOM input, spec ranges, process notes, pack-out. No tribal knowledge left behind. Partner with the Senior Product Manager on prioritization.",
+        "successMetric": "100% Stage-4 delivery on schedule. Zero concepts stuck in prototype >90 days. Zero ramp issues traceable to handoff gaps. Post-handoff Production debrief completed on every launch.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own ingredient evaluation and flavor voice",
+        "desiredResult": "Maintain an active ingredient shortlist. Partner with Procurement on availability, cost, and lead times. Protect the Vosges flavor signature across every concept.",
+        "successMetric": "Shortlist refreshed quarterly with 20+ active candidates. Zero launches delayed by ingredient sourcing surprises. Flavor voice audit documented at each Stage-3 review.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Partner with Operations Manager on current-product techniques",
+        "desiredResult": "Partner with the Operations Manager (Melissa) to improve techniques and procedures for products already in production. Bring R&D-level technique knowledge to the floor. Help standardize what's currently tribal. Elevate the craft of everyday production.",
+        "successMetric": "≥4 documented technique/procedure improvements shipped in 2026. Repeat quality incidents on current products trending down QoQ. Joint Chef–Ops cadence held monthly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Partner with Senior PM on 2026 SKU rationalization",
+        "desiredResult": "Partner with the Senior Product Manager on a robust SKU rationalization for 2026 — bringing the R&D lens on recipe lineage, ingredient overlap, and technical feasibility of consolidating formulations.",
+        "successMetric": "SKU rationalization decisions supported with R&D technical input on 100% of candidate SKUs. Rationalization plan ratified with LT by Q3. Zero launches blocked by unresolved rationalization questions.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Coach and cross-train the R&D team",
+        "desiredResult": "Development plans for every R&D team member. SOPs for core techniques. Build the bench. Chef retains R&D team coaching in 2026 (not transferring to SrPM) — the recipe and technique craft stays with the Chef seat.",
+        "successMetric": "Chef successor identified by year-end. Every R&D team member on a development plan. Core-technique SOPs documented and trained across the team.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Master chocolatier or equivalent confectionery R&D expertise",
+      "Recipe formulation and iteration discipline",
+      "Sensory / taste-test methodology",
+      "Ingredient sourcing fluency",
+      "Translates creative vision into manufacturable spec",
+      "Collaborative — builds with PM and Product Operations, not around them"
+    ],
+    "purpose": "be the creative and technical flavor authority for Vosges — developing recipes, prototyping new formats, improving techniques on current products in partnership with Operations, and coaching the R&D team. Taste-test program ownership moved to Senior Product Manager in 2026; Chef remains the flavor authority feeding the program.",
+    "jobDesc": "Lead chocolate and confectionery R&D. Formulate new recipes. Prototype, iterate, and hand off to production. Partner with the Operations Manager on technique and procedure improvements for current products. Partner with the Senior Product Manager on SKU rationalization and the roadmap (SrPM now owns the taste-test program; Chef feeds it). Partner with Product Operations on technical handoff (BOM, spec, yield). Coach and cross-train the R&D team.",
+    "note": "Peer to Senior Product Manager; both report to Director of Ecom. Elevated from Chocolate R&D Chef to Director-level ownership."
+  },
+  "product-ops": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Partner with Chef and Ops Manager on BOMs and procedures",
+        "desiredResult": "Partner with the Chef / R&D Director and the Operations Manager (Melissa) to improve BOMs and production procedures across current products. Directly support the Chef's current-product technique initiative with the BOM and spec data to make it real. Replaces the 'BOMs 2.0' project framing — this is the durable operating-model version of the same goal.",
+        "successMetric": "≥10 BOMs upgraded with improved spec and procedure documentation in 2026. Drift ≤2% on costcodes monthly. Joint Chef–Ops–Product-Ops cadence held monthly. Zero critical current-product BOMs flagged as unreliable by the floor.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own Flavor Studio and Fishbowl data integrity",
+        "desiredResult": "Monthly reconciliation on costcodes, pricing, allergens, and packaging data.",
+        "successMetric": "Drift ≤2% on costcodes monthly. Monthly reconciliation report delivered on time. Zero unresolved data discrepancies >30 days.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Provide Stage-Gate costing and feasibility",
+        "desiredResult": "Costed BOMs and yield assumptions at every gate review. Partner with Procurement on sourcing assumptions.",
+        "successMetric": "Pre-launch costing within ±5% of actual. Every Stage-Gate review has a costed BOM. Zero launches surprised by COGS.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Partner with Procurement on ingredient data",
+        "desiredResult": "Single source of truth in Fishbowl. Reconcile monthly with Procurement's vendor data and pricing.",
+        "successMetric": "Zero parallel spreadsheets by Q2. Monthly reconciliation clean. Ingredient data-quality score improving quarterly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Own NPD project management and cross-team ClickUp sync",
+        "desiredResult": "Run NPD project management in ClickUp end-to-end. Every Stage-Gate project, owner, deliverable, milestone, and due date stays current, accurate, and auditable — the Senior Product Manager should never be the one chasing ClickUp hygiene. Partner with the Marketing team's and Creative team's ClickUp project management leads to keep NPD, Marketing, and Creative pipelines synced and aligned, so launches land with all three workstreams hitting their marks together. Hold project owners to their ClickUp commitments and escalate when dates slip.",
+        "successMetric": "100% of active NPD projects live in ClickUp with owner, Stage-Gate phase, next milestone, and due date populated. Weekly NPD pipeline snapshot published by Monday 10 AM CT. Weekly tri-team ClickUp sync with Marketing + Creative PM leads — NPD, Marketing, and Creative launch dependencies visible on a single cross-team view. Zero launches where any of the three teams misses a key date due to lack of ClickUp visibility. Stage-Gate deliverables marked complete within 48 hours of actual completion.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "ERP/MRP fluency (Fishbowl) and recipe-management systems (Flavor Studio)",
+      "BOM and costing discipline",
+      "Data reconciliation and integrity",
+      "Technical fluency bridging R&D and operations",
+      "Documentation-oriented — turns tribal knowledge into systems",
+      "Comfortable partnering with creative and operational stakeholders"
+    ],
+    "purpose": "be the technical and data right-hand to the Senior Product Manager and Chef / R&D Director — owning BOMs, MRP, Flavor Studio, and Fishbowl data so the NPD team can move fast without breaking the data foundation the rest of the business depends on.",
+    "jobDesc": "Own BOMs, MRP logic, Flavor Studio recipe data, and Fishbowl product/costcode data for NPD. Support Stage-Gate with costing, feasibility, and data readiness. Partner with the Chef / R&D Director and the Operations Manager on improving Bills of Materials and procedures, directly supporting the Chef's current-product technique initiative. Bridge creative R&D and operational systems.",
+    "note": "Data / systems seat in the NPD three-seat team. Closes the historical handoff gap between R&D and Operations (prior owner: Kevin Brinker, departed — BOMs 2.0 paused)."
+  },
+  "jr-marketing-coord": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Execute campaign calendar tactics",
+        "desiredResult": "Build emails, social posts, and landing updates on schedule. Partner with the Marketing Manager on briefing and QA.",
+        "successMetric": "100% of tactics shipped on calendar date. Zero missed sends. Weekly production load delivered.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own campaign QA and trafficking",
+        "desiredResult": "Links, UTMs, render testing, and approvals before every send. Zero broken sends.",
+        "successMetric": "Zero campaign QA escapes. Every send logged and audited. QA checklist in use on 100% of sends.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Support launch hero assets and briefing",
+        "desiredResult": "Assist the Marketing Manager on launch deliverables. Coordinate with Art and Product on timing and scope.",
+        "successMetric": "Zero launches missing assets. Launch-support deliverables completed on brief.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Own community and influencer coordination",
+        "desiredResult": "Handle influencer shipments, tracking, and content follow-up. Maintain the influencer database.",
+        "successMetric": "≥95% of influencer deliverables shipped on schedule. Content capture rate improving QoQ.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Learn the Vosges operating system",
+        "desiredResult": "Shadow Marketing, Ecom, and Performance Marketing across the year. Build fluency across the stack.",
+        "successMetric": "Rotation completed by year-end. Development plan reviewed quarterly with Marketing Manager.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Marketing operations fluency",
+      "Email / ESP (Klaviyo, Mailchimp, or similar) administration",
+      "Social calendar management",
+      "Strong copy instincts",
+      "Detail-oriented project management",
+      "Eager to learn and grow"
+    ],
+    "purpose": "support the Marketing Manager on campaign execution — asset trafficking, email build, social calendaring, and cross-functional coordination — creating capacity for senior marketing to focus on strategy and creative direction.",
+    "jobDesc": "Traffic creative assets, build and schedule emails, maintain the social calendar, write first-draft copy, and coordinate with Art Direction, Performance Marketing, and Ecom on campaign execution. Own the operational details that keep every campaign on time.",
+    "note": "Scorecard tentatively approved 2026-04-18. Cross-reference with the Senior Designer's Figma process doc pending, which may add ownerships or responsibilities aligned to the creative-team PM system."
+  },
+  "sales-account-mgr": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Hit B2B revenue quota",
+        "desiredResult": "Own assigned accounts. Grow existing. Prospect and close new. Maintain weekly pipeline hygiene.",
+        "successMetric": "Quota attainment ≥100% quarterly. New-logo wins at or above plan. Pipeline coverage ≥3x quarterly quota.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Keep HubSpot current",
+        "desiredResult": "Every active opportunity updated weekly. Loss reasons captured on 100% of closed-lost deals. Clean stage progression.",
+        "successMetric": "100% weekly HubSpot hygiene. Zero opportunities stuck in a stage >30 days without an update.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Protect account health",
+        "desiredResult": "Proactive QBRs, retention motion, risk flagging at 90-day signal. Own the renewal conversation.",
+        "successMetric": "Account retention ≥95% YoY on assigned book. Zero retention losses without documented root cause.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Sell the standardized B2B offering",
+        "desiredResult": "Use approved configurations and pricing. Escalate customization requests to the Director of Sales rather than improvising.",
+        "successMetric": "Zero fulfillment-risk customizations shipped. 100% of deals use approved configurations or documented exceptions.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Partner with Ops on delivery",
+        "desiredResult": "Route orders through Sales Ops. Flag risks early. Trust the process rather than side-channel with Production.",
+        "successMetric": "Zero sales-caused fulfillment misses. Zero Production side-channels on assigned accounts.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "B2B sales with corporate-gifting or luxury-goods experience",
+      "Relationship-building and account growth",
+      "HubSpot or CRM fluency",
+      "Cross-functional partnership with Ops and Customer Service",
+      "Proposal writing and pricing discipline",
+      "Client advocate who respects operational realities"
+    ],
+    "purpose": "carry a portfolio of Vosges B2B corporate-gifting accounts — capture new business, grow existing relationships, and partner with Sales Ops to deliver on every commitment.",
+    "jobDesc": "Own a named book of corporate-gifting accounts. Prospect, pitch, and close new business. Grow existing accounts. Partner with Director of Operations on fulfillment commitments and with Customer Service on recurring account needs. Maintain HubSpot pipeline discipline.",
+    "note": "Front-line seller role; scope lifted from Andy's gold-standard example."
+  },
+  "jr-account-mgr": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Partner with Ops and Fulfillment on Q4 peak corporate gifting",
+        "desiredResult": "The most important responsibility for this role in 2026. Partner with Operations and Fulfillment to ensure the successful execution of Q4 peak corporate gifting — lead time discipline, order capture accuracy, multi-ship routing through Zest, and escalation handling. Replaces the 'manage accounts deemed house' initiative, which is not relevant in 2026 (no house-accounts model this year).",
+        "successMetric": "Zero Q4 corporate-gifting misses attributable to capture/routing error on the assigned book. Cross-functional Q4 readiness sign-off delivered on time. Escalation log maintained and reviewed weekly with Director of Sales and Ops.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Keep HubSpot current daily",
+        "desiredResult": "Every account touch logged. Pipeline hygiene maintained weekly.",
+        "successMetric": "100% weekly HubSpot hygiene. Daily activity logging maintained without gaps.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Support proposal and order capture",
+        "desiredResult": "Build proposals using approved templates. Coordinate with Sales Ops on complex or multi-ship orders.",
+        "successMetric": "Zero proposal errors reaching customers. Proposal turnaround within target SLA.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Grow selling fluency",
+        "desiredResult": "Ride along with Sales Account Manager on strategic calls. Shadow the Director of Sales on key accounts.",
+        "successMetric": "B2B catalog certification complete by Q3. Documented development plan reviewed quarterly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Own inside sales support for Sales Account Managers",
+        "desiredResult": "Act as the inside-sales backbone for the Sales Account Managers. Own the back-office work that would otherwise pull SAMs out of the field — order entry, quote prep, sample coordination, HubSpot record keeping on SAM-owned accounts, contract and paperwork follow-up, and cross-functional handoffs with Ops, Fulfillment, Finance, and Customer Service. Every hour a SAM spends selling in the field should be an hour freed up by the JAM's back-office coverage. The SAMs should feel that their pipelines move faster because of this role, not slower.",
+        "successMetric": "All SAM orders entered in Fishbowl/HubSpot within 24 hours of verbal close. Quote turnaround under 48 hours from SAM request. SAM-owned HubSpot accounts maintained with 100% current-quarter activity logging and clean stage data. Zero \"lost in back office\" escalations on SAM accounts per quarter. SAM-reported \"selling hours per week\" baselined in Q1 and trending up quarter over quarter. Monthly SAM feedback confirms the JAM is making them more effective.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Early-career sales discipline",
+      "Proposal and quote fluency",
+      "Research and account-profiling skill",
+      "HubSpot or CRM hygiene",
+      "Coachable — takes feedback and applies it",
+      "Polished written communication"
+    ],
+    "purpose": "act as the inside-sales backbone for Sales Account Managers and the Director of Sales — owning back-office work so senior sellers stay in the field, supporting Q4 peak corporate gifting execution, and growing toward a full-quota seat by year-end.",
+    "jobDesc": "Own back-office support for the SAM team: order entry, quote prep, sample coordination, HubSpot hygiene on SAM-owned accounts, and contract/paperwork follow-up. Partner with Operations and Fulfillment on Q4 peak corporate gifting execution. Maintain daily HubSpot accuracy across SAM accounts. Coordinate cross-functional handoffs with Ops, Fulfillment, Finance, and Customer Service so nothing falls through the cracks. Shadow senior sellers and build selling fluency toward a full-quota seat at end-of-year.",
+    "note": "Future role planned for end of 2026 as Sales scales."
+  },
+  "wholesale-pl": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Build the Wholesale and Private Label pipeline",
+        "desiredResult": "Source, qualify, and close wholesale and private-label accounts. Partner with Prosper Lab on the Faire channel.",
+        "successMetric": "Pipeline value at or above plan quarterly. Closed-won revenue at or above plan. Faire account managed via Prosper Lab on plan.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own category, buyer, and broker relationships",
+        "desiredResult": "Active cadence with Faire, regional brokers, and key retail buyers. Build the relationship map.",
+        "successMetric": "Active deals with ≥10 buyers. Broker cadence maintained monthly. Relationship map current.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Partner with COO on the private-label program end-to-end",
+        "desiredResult": "Co-own the private-label program with the COO — intake, Stage-Gate alignment, pricing, production-slot coordination, and delivery. Every PL opportunity and cycle flows through the COO for strategic and capacity alignment. This seat drives the front-end and account work; the COO owns the capacity commitment.",
+        "successMetric": "100% of PL commitments delivered on schedule. Zero PL customer escalations for delivery or quality. Every PL opportunity reviewed with COO before commit. PL pipeline reviewed monthly with COO.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Protect wholesale margin",
+        "desiredResult": "Hold pricing floors. Manage promo discipline. Monitor channel conflict with DTC and retail.",
+        "successMetric": "Wholesale gross margin at or above plan. Zero unapproved pricing exceptions. Channel-conflict incidents tracked and resolved.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Partner with Director of Sales on channel strategy",
+        "desiredResult": "Weekly pipeline review. Quarterly channel plan with explicit bets and trade-offs.",
+        "successMetric": "Quarterly channel plan delivered on time. Weekly pipeline review held and documented.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Wholesale sales in food or luxury CPG",
+      "Faire / wholesale marketplace fluency",
+      "Private-label partnership experience",
+      "Retail math and margin discipline",
+      "Cross-functional partnership with Product and Ops",
+      "Brand-first commercial instinct"
+    ],
+    "purpose": "build Vosges' wholesale and private-label business — grow the Faire channel, open new retailer relationships, and develop private-label partnerships that scale revenue without diluting the brand.",
+    "jobDesc": "Own wholesale account acquisition and growth. Manage the Faire relationship alongside Prosper Lab. Partner with the COO on all private-label sales opportunities and cycles (PL is a shared COO responsibility). Partner with Product on wholesale-specific SKUs and pricing. Partner with Operations on fulfillment capacity.",
+    "note": "Future role planned for end of 2026 once wholesale ops are stable and Faire channel is proven."
+  },
+  "dir-ops": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Run the integrated Operations plan and own the operations cadence",
+        "desiredResult": "Own a rolling 13-week production, fulfillment, and capacity plan synced with Sales, Ecom, and NPD. Own the unified operations cadence — weekly Sales & Ops, daily production huddle, monthly operations review — migrated down from the COO scorecard in 2026. Publish variance weekly.",
+        "successMetric": "13-week plan variance ≤10%. Weekly readout delivered on time. Zero capacity surprises older than 30 days. Full operations cadence documented and running on time. ≥95% LT attendance on Sales & Ops. Every operating meeting produces written commitments with owners and dates.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own OTIF as the Ops KPI",
+        "desiredResult": "Root-cause every miss. Eliminate repeat causes through partnership with Customer Tech Ops, Sales, and Fulfillment.",
+        "successMetric": "OTIF at or above target every month by channel. Zero repeat-cause misses beyond two occurrences.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Install the weekly Sales & Ops partnership",
+        "desiredResult": "Co-lead the weekly Sales & Ops meeting with the Director of Sales. Establish and hold SLAs.",
+        "successMetric": "Weekly meeting running with structured agenda. SLAs documented and tracked. Zero CX failures from Sales–Ops gaps.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Develop the floor leadership bench",
+        "desiredResult": "Coach the Ops Manager. Launch Vosges Passport on the floor. Name supervisor successors.",
+        "successMetric": "Every supervisor has a named successor by year-end. Passport live on the floor. Ops Manager on active scorecard.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Partner with QA Manager on SQF readiness",
+        "desiredResult": "Share the SQF mandate. Coordinate audits, training, and incident response.",
+        "successMetric": "SQF passed with zero major NCs. Mock audits completed on schedule. Training completion at or above standard.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "End-to-end Operations leadership in food or CPG",
+      "S&OP / production planning discipline",
+      "People leadership, coaching, and succession planning",
+      "Quality and food-safety fluency (SQF, HACCP, GMP)",
+      "Financial literacy — cost, margin, labor, yield",
+      "Calm under pressure; systems thinker"
+    ],
+    "purpose": "serve as the strategic #2 to the COO for all of Operations — owning the integrated operating plan across production, fulfillment, procurement, quality, and customer service, and ensuring the factory and service stack deliver on their commitments.",
+    "jobDesc": "Translate the COO's operating priorities into an integrated Operations plan. Own the unified operations cadence — weekly LT contributions, daily production huddles, weekly Sales & Ops — on behalf of the COO. Run Production, Procurement, Quality, and Customer Service as one system. Be the single point of accountability for what the factory commits to and what it delivers. Build the bench beneath you.",
+    "note": "Strategic operations leader. QA Manager and Customer Service Manager were moved under this seat from COO per the proposed structure."
+  },
+  "ops-mgr": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Hit daily and weekly production targets",
+        "desiredResult": "Run daily huddles and clean shift handoffs. Remove blockers in real time. Escalate early and cleanly.",
+        "successMetric": "Weekly plan attainment ≥90%. Daily huddles held 5x/week. Blockers resolved within shift ≥80% of the time.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Lead and develop production supervisors",
+        "desiredResult": "Hold supervisor scorecards and monthly 1:1s. Cross-train to remove single-point-of-failure roles.",
+        "successMetric": "Every supervisor on active scorecard with monthly 1:1. Cross-training coverage complete by Q3.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Own food safety and GMP on the floor",
+        "desiredResult": "Enforce GMP, sanitation, and allergen protocols every shift. Be the visible face of food-safety culture.",
+        "successMetric": "Zero preventable GMP findings. Daily sanitation audits held. Allergen protocol compliance at 100%.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Reduce scrap and rework",
+        "desiredResult": "Root-cause the top-3 scrap drivers quarterly. Fix the source — formulation, equipment, or behavior.",
+        "successMetric": "Scrap rate down quarter-over-quarter. Top-3 driver analysis published quarterly. Fix-source actions closed.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Restructure floor QA coverage with QA Manager",
+        "desiredResult": "Close the coverage gaps that let weight-variance incidents reach the customer.",
+        "successMetric": "Weight-variance incidents trending to zero. Coverage model documented and staffed. Floor QA huddle running.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Floor leadership in food manufacturing",
+      "Supervision and coaching of line leadership",
+      "GMP, HACCP, SQF fluency",
+      "Lean / continuous improvement mindset",
+      "Warehouse, freezer, and preventative maintenance fluency",
+      "Calm, direct communication under stress"
+    ],
+    "purpose": "run the day-to-day of the factory floor — production, assembly, fulfillment, warehouse, and maintenance — so that daily and weekly production targets are hit safely, consistently, and to spec.",
+    "jobDesc": "Be the senior presence on the floor. Own daily production huddles, shift handoffs, and execution against the production plan. Manage supervisors and their teams. Resolve operational issues in real time. Partner with Quality, Procurement, and Maintenance to keep the line running.",
+    "note": "Floor lead — most senior operational presence in the building day-to-day. Fulfillment, Warehouse, and Maintenance roll up here."
+  },
+  "fulfillment-super": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Ship orders on time, accurately",
+        "desiredResult": "Own daily pick, pack, label, and ship throughput. Hit the calendar.",
+        "successMetric": "Ship-on-time ≥98% daily. Backlog trending to zero by end of shift. Peak throughput within plan.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own fulfillment accuracy",
+        "desiredResult": "Enforce pick and pack standards. Audit variance weekly. Close gaps with training and tooling.",
+        "successMetric": "Fulfillment accuracy ≥99%. Weekly variance audit documented. Root-cause actions closed within 14 days.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Develop the pack-line bench",
+        "desiredResult": "Cross-train the team. Named backups for every station.",
+        "successMetric": "Every station ≥2 deep on trained staff. Cross-training matrix current. Zero single-point-of-failure stations.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Manage peak capacity",
+        "desiredResult": "Staff peaks in advance. Coordinate with the Ops Manager on flex labor and overtime.",
+        "successMetric": "Zero peak-period backlog days. Flex labor plan in place 30 days before peak. Overtime within plan.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Partner with Customer Tech Ops on ShipStation and order tech",
+        "desiredResult": "Partner with Customer Tech Operations on ShipStation and other order-related issues related to the technology systems. Escalate integration issues. Trend down manual touches on orders through tech, not through headcount.",
+        "successMetric": "Manual ship touches down quarter-over-quarter. Zero ShipStation outages >2 hours without escalation. Joint Fulfillment–Customer-Tech-Ops review held monthly.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Fulfillment operations leadership",
+      "Warehouse / shipping systems fluency (ShipStation, Fishbowl)",
+      "Team leadership of hourly staff",
+      "QC and accuracy discipline",
+      "Calm in peak-season chaos",
+      "Written communication for exceptions"
+    ],
+    "purpose": "lead the daily execution of Vosges' pick / pack / ship operation — hit ship-date targets, protect order accuracy, and run the team that gets every order out the door.",
+    "jobDesc": "Own daily fulfillment — picking, packing, shipping — across DTC, B2B, wholesale, and retail replenishment. Manage pick/pack leads and shipping specialists. Hit ship dates. Protect order accuracy. Partner with Customer Tech Operations and Customer Service on exceptions.",
+    "note": "Floor-level fulfillment leader under Ops Manager."
+  },
+  "procurement-mgr": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "No out-of-stocks on everyday items",
+        "desiredResult": "Prioritized 2026 initiative, migrated down from the COO/Director of Ops OKR. Own the execution of the everyday-SKU stock-level KR. Director of Operations is accountable for the overall OKR; Procurement Manager does the majority of the work — reorder discipline, vendor responsiveness, inbound timing, and exception handling on the everyday-SKU list.",
+        "successMetric": "Zero stock-outs on the everyday-SKU list in 2026. Weekly stock-level readout delivered. Every exception logged, root-caused, and closed with a dated action. Director of Ops sign-off that Procurement is executing the OKR share.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Build vendor and sourcing strategy",
+        "desiredResult": "Segment vendors by criticality. Qualify dual sources on Class-A ingredients and packaging.",
+        "successMetric": "2+ qualified sources for every Class-A item. Vendor segmentation documented and reviewed annually.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Own inventory discipline",
+        "desiredResult": "Hold reorder points, safety stock, and turns targets tuned to the forecast. Prevent the everyday-SKU OOS condition through reorder discipline.",
+        "successMetric": "Inventory turns +1 on Class-A vs 2025 baseline. Safety-stock days within target. Dead stock trending down.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Run Fishbowl as the procurement source of truth",
+        "desiredResult": "100% of POs in Fishbowl. Reconcile monthly with Flavor Studio.",
+        "successMetric": "Drift ≤2% on costcodes and pricing monthly. Zero POs outside Fishbowl. Monthly reconciliation clean.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Protect holiday, launch, and Stage-Gate lead times",
+        "desiredResult": "Own the procurement calendar. Run 90-day risk reviews per named launch. Attach a sourcing feasibility assessment to every concept before Stage-Gate commit (absorbed from the prior Stage-Gate sourcing initiative).",
+        "successMetric": "Zero launch stock-outs attributable to procurement. 90-day risk review on file for every named launch. Sourcing assessment on 100% of Stage-2+ concepts.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Strategic sourcing and procurement negotiation",
+      "Vendor management across food ingredients and packaging",
+      "Inventory planning and working-capital management",
+      "ERP/MRP fluency (Fishbowl or equivalent)",
+      "Cross-functional partnership with NPD, Finance, Ops",
+      "Ethical sourcing and supplier audit literacy"
+    ],
+    "purpose": "own end-to-end sourcing, purchasing, and inventory management — making sure Vosges has the ingredients and packaging it needs at the right cost, quality, and timing, without tying up cash in excess inventory.",
+    "jobDesc": "Lead sourcing and purchasing for all ingredients, packaging, and indirect materials. Manage vendor relationships. Own inventory levels, reorder points, and safety stock. Partner with NPD on sourcing for new products. Partner with Finance on cost and cash. Drive Fishbowl as the source of truth. Coach the Inventory Specialist.",
+    "note": "Consolidated procurement + inventory management under a single accountable seat."
+  },
+  "inventory-specialist": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Maintain Fishbowl inventory accuracy",
+        "desiredResult": "Run daily cycle counts on assigned zones. Reconcile variances within 48 hours.",
+        "successMetric": "Inventory accuracy ≥98% monthly. Cycle-count cadence held. Variances resolved within 48 hours ≥95% of the time.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Own purchase-order flow",
+        "desiredResult": "PO entry, receiving reconciliation, vendor follow-up on open POs.",
+        "successMetric": "Zero orphan POs >30 days. PO-to-receipt match rate ≥98%. Vendor follow-up logged.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Manage safety stock and reorder triggers",
+        "desiredResult": "Monitor reorder points daily. Flag gaps before they become stock-outs.",
+        "successMetric": "Zero Class-A stock-outs. Reorder triggers reviewed weekly. Flags escalated to Procurement Manager with 2 weeks' lead.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Run monthly inventory reporting",
+        "desiredResult": "Closing inventory, aging, turns, and slow-movers. Deliver to the Procurement Manager and Finance on schedule.",
+        "successMetric": "Monthly inventory report delivered on time. Aging-stock trends documented. Slow-mover list actioned monthly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Support cycle count and physical inventory",
+        "desiredResult": "Lead the cycle-count program. Own the execution of the annual physical count.",
+        "successMetric": "Zero cycle-count schedule misses. Annual physical count completed with variance within standard.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Inventory management discipline",
+      "Fishbowl fluency",
+      "Detail-oriented data hygiene",
+      "Basic Excel / data tools",
+      "Cross-functional partnership with Product Operations and Ops",
+      "Comfortable on the floor and in the data"
+    ],
+    "purpose": "own the data discipline of Vosges inventory — cycle counts, receiving accuracy, Fishbowl integrity, and reorder-point maintenance — so the business runs on a number everyone can trust.",
+    "jobDesc": "Execute cycle counts. Reconcile Fishbowl against physical inventory. Own receiving accuracy. Maintain reorder points and min/max levels. Flag inventory risks to the Procurement Manager. Partner with Product Operations on BOM data integrity.",
+    "note": "Real role per Andy — reports to Procurement Manager."
+  },
+  "qa-manager": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Pass SQF with zero major NCs",
+        "desiredResult": "Mock audits, gap closure, training, and audit execution. Own the full SQF readiness program.",
+        "successMetric": "SQF passed on schedule in 2026 with zero major non-conformances. Mock audits completed on plan.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Build the floor QA coverage model",
+        "desiredResult": "Assess gaps with the Ops Manager. Staff and document the new coverage model.",
+        "successMetric": "Spec-drift incidents trending down monthly. Coverage model documented and staffed to plan.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Own regulatory and labeling compliance",
+        "desiredResult": "FDA, Canadian, and Mexican requirements across every active SKU. Lead labeling audits before launch.",
+        "successMetric": "Zero regulatory findings or recalls. Labeling audit completed on 100% of launches pre-ship.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Drive the Blame-the-Process-First culture",
+        "desiredResult": "Root-cause analysis on every quality incident. Publish learnings. Teach supervisors to see the process, not the person.",
+        "successMetric": "Repeat-cause incidents down quarterly. Root-cause published on 100% of incidents. Supervisor RCA certification complete by Q3.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Partner with NPD on design-for-quality",
+        "desiredResult": "Embed QA gates at Stage 3 and Stage 4. Make specs manufacturable before launch.",
+        "successMetric": "Zero post-launch quality reformulations. QA sign-off on 100% of Stage 3 and Stage 4 gate reviews.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "SQF, HACCP, GMP, allergen-management expertise",
+      "FDA and international regulatory fluency",
+      "QA team leadership and coaching",
+      "Root-cause analysis (5-Whys, Fishbone, CAPA)",
+      "Cross-functional influence with Ops and NPD",
+      "Documentation and audit discipline"
+    ],
+    "purpose": "protect Vosges customers, team members, and brand by owning food safety, quality assurance, and regulatory compliance across the organization.",
+    "jobDesc": "Own food safety (SQF, HACCP, GMP), quality assurance programs, and regulatory compliance (FDA, Canadian/Mexican export, allergen controls). Lead audits. Be the final authority on product holds, releases, and CAPAs. Partner with Ops, Procurement, and NPD so quality is built in, not inspected in.",
+    "note": "Moved under Director of Operations (was COO). Consolidated leadership of the QA function."
+  },
+  "cust-service-mgr": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Hit CSAT, NPS, and response-time targets",
+        "desiredResult": "Own the top service KPIs. Build standards. Audit weekly.",
+        "successMetric": "First-response SLA met ≥95% of the time. CSAT at or above target. NPS trending up QoQ.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Build the service playbook and training",
+        "desiredResult": "Document recurring scenarios. Certify agents through a standard onboarding program.",
+        "successMetric": "New-hire ramp time down 30% vs 2025. 100% of agents certified on the playbook. Playbook updated quarterly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Partner with Customer Tech Ops on Gorgias",
+        "desiredResult": "Co-own macros, rules, routing, and integrations. Drive resolution time through tooling rather than headcount.",
+        "successMetric": "Manual triage time down 25%. Resolution time improving QoQ. Tooling health reviewed quarterly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Channel customer voice into the business",
+        "desiredResult": "Monthly VOC readout to Ecom, NPD, Ops, and Retail. Turn complaints into systemic changes.",
+        "successMetric": "≥3 systemic changes per quarter traceable to VOC. Monthly readout delivered on schedule.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Handle escalations and protect the brand",
+        "desiredResult": "Own high-priority escalations personally. Make the customer whole or escalate internally with a dated plan.",
+        "successMetric": "100% of escalations resolved within SLA. Zero public escalations requiring CEO intervention.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Customer service leadership in a premium brand",
+      "Helpdesk / CX tooling fluency (Gorgias, Zendesk, or equivalent)",
+      "KPI management (CSAT, NPS, response time)",
+      "Coaching and team development",
+      "Strong written communication",
+      "Cross-functional advocacy for the customer"
+    ],
+    "purpose": "lead the Chocolate Concierge Department so every Vosges customer — DTC, retail, and B2B follow-up — receives responsive, warm, and accurate service that reinforces the brand promise.",
+    "jobDesc": "Manage and mentor the service team. Own CSAT, NPS, response-time, and contact-deflection KPIs. Build workflows and playbooks. Handle escalations. Channel customer voice back into Product and Commerce so the same issues stop reaching the customer.",
+    "note": "Moved under Director of Operations per the proposed structure. Partners closely with Customer Tech Operations."
+  },
+  "head-tech": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Publish the tech roadmap and architecture",
+        "desiredResult": "Document the current-state architecture. Build a 12-month roadmap tied to business outcomes, not projects.",
+        "successMetric": "Architecture and roadmap published and reviewed with LT quarterly. Every roadmap item tied to a business outcome.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Make Fishbowl the operational source of truth",
+        "desiredResult": "Partner with Procurement, Product Operations, and Finance. Close down parallel systems and spreadsheets.",
+        "successMetric": "System drift ≤2% monthly. Zero critical parallel systems by Q3. Monthly reconciliation clean.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Own integrations and stack data quality",
+        "desiredResult": "Shopify, HubSpot, Gorgias, Flavor Studio, Fishbowl healthy end-to-end. Monitor and respond within SLA.",
+        "successMetric": "Integration incidents resolved within SLA ≥95% of the time. Zero data-quality incidents >24 hours.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Own security, access, and IT basics",
+        "desiredResult": "MFA, access reviews, device management, backup, and incident response. No theater — real hygiene.",
+        "successMetric": "Zero unauthorized-access incidents. Quarterly access review completed. Backup restore tested quarterly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Partner on tech-enabled improvement",
+        "desiredResult": "Help Sales, NPD, Ops, and CS pick and use the right tools. Sponsor the 3–5 highest-impact improvements.",
+        "successMetric": "≥4 major tech-enabled improvements delivered in 2026 with documented outcomes.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Technology leadership in a multi-system CPG / retail environment",
+      "ERP / MRP / PIM / CRM fluency",
+      "Integration and data architecture",
+      "Vendor management and contract negotiation",
+      "Security basics",
+      "Business-first orientation — leads with outcome, not tool"
+    ],
+    "purpose": "own the technology backbone of Vosges — Shopify, Fishbowl, Flavor Studio, HubSpot, data integrations, infrastructure, and IT — making sure the right systems exist, work together, and evolve with the business.",
+    "jobDesc": "Own technology strategy, architecture, vendor management, and data integration. Maintain and evolve the core stack (Shopify Plus, Fishbowl, Flavor Studio, HubSpot). Own security, access, and IT operations. Coach the Customer Tech Operations seat. Partner with every functional leader on tech-enabled improvement.",
+    "note": "IT box on the org chart = this seat (per Andy). Connective service under COO."
+  },
+  "cust-tech-ops": {
+    "initiatives": [
+      {
+        "priority": 1,
+        "name": "Stabilize the customer-facing tech stack",
+        "desiredResult": "Audit every tool. Close gaps. Document owners and escalation paths. Broader 2026 framing — replaces the prior 'Fix ShipperHQ / Quick Pay / calendar' project scope, which was too narrow.",
+        "successMetric": "Zero CX failures from misconfiguration by Q3. Tool inventory current. Escalation paths documented. Peak-period lock-down held without regression.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 2,
+        "name": "Reduce WISMO tickets and generate revenue via Gorgias",
+        "desiredResult": "Own reducing 'Where Is My Order' tickets through Gorgias automation, AI-assisted response, and upstream integration. Turn Gorgias from a cost-center tool into a revenue-generation touchpoint (targeted offers, proactive recovery, cross-sell in support flows).",
+        "successMetric": "WISMO ticket volume down ≥30% YoY. Gorgias-attributed revenue tracked and trending up. AI-assisted resolution deployed on ≥50% of qualifying ticket types. Quarterly Gorgias health check documented.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 3,
+        "name": "Enable HubSpot for Sales — lead capture, prospecting, deal closure",
+        "desiredResult": "Partner with the Director of Sales to enable strategic capabilities within HubSpot as the sales CRM and B2B marketing engine. Lead capture flows, prospecting workflows, deal-stage pipelines, and closure support. Retire any lingering 'HubSpot = service' configuration — Vosges does not use HubSpot for service.",
+        "successMetric": "B2B pipeline live with win/loss tracking in HubSpot. Lead-capture flows active on the site and tracked to deal. Sales team reports HubSpot is usable daily. Zero service routing still configured in HubSpot by Q2.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 4,
+        "name": "Own stack data quality",
+        "desiredResult": "Accurate customer and order flow across Shopify, HubSpot, Fishbowl, and Gorgias. Monthly reconciliation with the operating owners of each tool.",
+        "successMetric": "Zero CX failures from data drift. Monthly data-quality report delivered. Drift resolved within 7 days. Joint review with Ecom Manager and Customer Service Manager quarterly.",
+        "coachFeedback": null
+      },
+      {
+        "priority": 5,
+        "name": "Back up the Ecom Manager on sales-side systems",
+        "desiredResult": "Serve as the support-and-backup seat for the Ecom Manager on Zest, the B2B Shopify instance, and the retail Shopify instances. Be trained enough to cover the Ecom Manager during absences and to unblock issues in real time. Partner daily on the sales/support stack boundary.",
+        "successMetric": "Backup coverage documented. Ecom Manager absence covered without CX impact at least 2x in 2026. Zest accuracy ≥99% post-launch. B2B Shopify stable through first 30 days. Joint sales/support stack review held monthly.",
+        "coachFeedback": null
+      }
+    ],
+    "skills": [
+      "Customer-facing SaaS administration (Gorgias, HubSpot, Shopify)",
+      "Integration and API fluency",
+      "Vendor management and SLA oversight",
+      "Data-quality discipline",
+      "Cross-functional partnership with CS, Ecom, Sales, and IT",
+      "Pragmatic problem-solver — makes systems work, not perfect"
+    ],
+    "purpose": "own the successful implementation, maintenance, and continuous improvement of the customer-facing technology stack — Gorgias (support), HubSpot (sales CRM and B2B marketing; NOT service), Shopify customer-facing integrations, Zest, ShipperHQ, and the order stack — so the customer experience is reliable and the Sales and Support teams can act on clean data. Also: back up the Ecom Manager on sales-side systems.",
+    "jobDesc": "Own the customer-facing technology stack. Gorgias for support. HubSpot configured as the sales CRM and B2B marketing engine (NOT as a service tool — Vosges does not use HubSpot for service). Partner with Customer Service and the Sales Director. Support the Ecom Manager on Zest, the B2B Shopify instance, and the retail Shopify instances — and provide backup coverage when the Ecom Manager is unavailable. Configure, maintain, and improve each tool. Own integrations and data flow.",
+    "note": "Reports to Head of Technology per the proposed structure."
+  }
+}
