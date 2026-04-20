@@ -1,0 +1,1537 @@
+{
+  "metadata": {
+    "title": "Vosges Haut-Chocolat 2026 Organizational Design",
+    "version": "1.0",
+    "lastUpdated": "2026-04-20",
+    "sources": [
+      "Vosges 2026 Job Scorecards.xlsx (28 tabs)",
+      "FigJam board I97cpRfgnDXiVvwUXeVsCd",
+      "Vosges 2026 Org Design Proposal.docx",
+      "04-18 scorecard review dictation"
+    ]
+  },
+
+  "pillars": [
+    {
+      "id": "leadership",
+      "name": "Leadership",
+      "color": "#3d3d3d",
+      "description": "Enterprise strategy, financial stewardship, and external representation"
+    },
+    {
+      "id": "meaning",
+      "name": "Meaning — Brand & Product Engine",
+      "color": "#722F37",
+      "description": "Everything that makes Vosges mean something in the market — product, brand, creative, DTC"
+    },
+    {
+      "id": "selling",
+      "name": "Selling — Sales Engine",
+      "color": "#B8860B",
+      "description": "B2B sales, corporate gifting, wholesale, private label, and retail boutiques"
+    },
+    {
+      "id": "making",
+      "name": "Making — Operations Engine",
+      "color": "#2F5D5C",
+      "description": "Production, fulfillment, procurement, QA, customer service — everything that delivers the promise"
+    },
+    {
+      "id": "connective",
+      "name": "Connective Services",
+      "color": "#6B5B73",
+      "description": "Functions that serve every pillar — HR, Technology"
+    }
+  ],
+
+  "roles": [
+    {
+      "id": "board",
+      "tabNumber": null,
+      "title": "Board of Directors",
+      "shortTitle": "Board",
+      "pillar": "leadership",
+      "currentHolder": null,
+      "holderStatus": "filled",
+      "location": null,
+      "purposeOfRole": null,
+      "jobDescription": null,
+      "note": null,
+      "coachId": null,
+      "directSupports": ["ceo", "coo"],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": {
+        "exists": true,
+        "parentId": null
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": null
+      }
+    },
+    {
+      "id": "ceo",
+      "tabNumber": 1,
+      "title": "Chief Executive Officer",
+      "shortTitle": "CEO",
+      "pillar": "leadership",
+      "currentHolder": "Andy Ruttgers",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Set the company's strategic direction, steward the brand's identity and long-term value, and ensure Vosges Haut-Chocolat fulfills its potential as a luxury brand.",
+      "jobDescription": "Define and hold the multi-year strategic roadmap. Own financial stewardship — P&L, capital structure, and investor/owner relationships. Build and retain the executive team. Represent the brand externally.",
+      "note": "CEO scorecard focuses on STRATEGIC leadership, not day-to-day operations.",
+      "coachId": "board",
+      "directSupports": ["dir-ecom", "dir-sales", "regional-gm", "hr-manager"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Own the 3-year strategic plan",
+          "desiredResult": "Hold and evolve the multi-year roadmap that ties brand, portfolio, channel mix, and margin profile together. Partner with COO on execution translation.",
+          "successMetric": "Strategic plan documented, dated, and reviewed with LT quarterly. Annual priorities traceable to the plan. 90% of execution traceable to strategic intent.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "Steward brand and portfolio integrity",
+          "desiredResult": "Be the final guardian of what Vosges means in the market. Validate major brand, product, and channel decisions against brand standards.",
+          "successMetric": "Every major brand, product, and channel decision reviewed against a written brand framework. Zero brand-dilutive launches.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 3,
+          "name": "Build and retain the executive team",
+          "desiredResult": "Hire, calibrate, and hold the standard for the top layer of the organization. Coach direct reports on scorecards.",
+          "successMetric": "Executive seats filled with A-players within 90 days of vacancy. No direct report without a scorecard coaching cycle.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 4,
+          "name": "Own financial stewardship and owner alignment",
+          "desiredResult": "Hold P&L ownership at the enterprise level. Partner with the COO and Finance on capital structure, cash management, and investor relations.",
+          "successMetric": "Annual budget on time with scenario ranges. Monthly close reviewed with ownership. Cash runway ≥6 months.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 5,
+          "name": "Represent Vosges externally",
+          "desiredResult": "Be the face of the brand with trade partners, press, key accounts, and the luxury market.",
+          "successMetric": "≥12 strategic relationships actively cultivated in 2026. Each external commitment traceable to strategic plan.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Long-horizon strategic thinking",
+        "Brand instinct paired with commercial discipline",
+        "Executive team building and retention",
+        "Financial stewardship and capital allocation",
+        "External brand representation"
+      ],
+      "currentState": {
+        "exists": true,
+        "parentId": "board",
+        "directSupports": ["dir-ecom", "hr-manager", "regional-gm", "denise", "ian"]
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "board",
+        "directSupports": ["dir-ecom", "dir-sales", "hr-manager"]
+      }
+    },
+    {
+      "id": "coo",
+      "tabNumber": 2,
+      "title": "Chief Operating Officer",
+      "shortTitle": "COO",
+      "pillar": "leadership",
+      "currentHolder": "Jay Scher",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Operationalize enterprise strategy — make sure the company delivers on what it promises customers, keeps unit economics healthy, and builds capabilities for the next chapter.",
+      "jobDescription": "Own execution across Operations, Supply Chain, Quality, Customer Service, and Technology. Partner with the CEO on strategy; translate it into operating plans.",
+      "note": "COO scorecard focuses on STRATEGIC operating leadership — building the operating system, not doing the work.",
+      "coachId": "board",
+      "directSupports": ["dir-ops", "head-tech"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Hold operating leaders accountable to scorecards and OKRs",
+          "desiredResult": "Run the scorecard and OKR framework as a management system. Every direct report has an active scorecard and quarterly coaching review.",
+          "successMetric": "Every direct report has an active scorecard and quarterly coaching review. Off-track items escalated within one cycle.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "Protect enterprise gross margin through operating discipline",
+          "desiredResult": "Partner with Finance, Procurement, and Operations to protect gross margin through lean practices and waste reduction.",
+          "successMetric": "Gross margin at or above plan by channel. Zero major margin surprises after month-end.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 3,
+          "name": "Own the end-to-end customer fulfillment promise",
+          "desiredResult": "Be accountable for the experience the customer actually receives — lead times, shipping accuracy, and service quality.",
+          "successMetric": "OTIF at or above target by channel every month. Customer-facing failures tracked and root-caused.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 4,
+          "name": "Sponsor the capability build-out the next chapter requires",
+          "desiredResult": "Identify the 3–5 capability gaps (B2B infrastructure, forecasting, BOMs 2.0, data integration) and ensure each has an owner, a deadline, and resources.",
+          "successMetric": "Capability portfolio published and reviewed quarterly. Each project has owner, deadline, and resources.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Operating-system thinking — building cadence and holding it",
+        "Cross-functional leadership across Ops, Tech, and Customer",
+        "Financial discipline and margin protection",
+        "Capability-building and sponsorship"
+      ],
+      "currentState": {
+        "exists": true,
+        "parentId": "board",
+        "directSupports": ["dir-ops", "qa-manager", "head-tech"]
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "board",
+        "directSupports": ["dir-ops", "head-tech"]
+      }
+    },
+    {
+      "id": "dir-ecom",
+      "tabNumber": 3,
+      "title": "Director of Ecom",
+      "shortTitle": "Dir of Ecom",
+      "pillar": "meaning",
+      "currentHolder": "Jen Hockey",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Lead Vosges' direct-to-consumer Ecom + Brand engine — owning the commercial narrative, product roadmap, and customer experience across DTC channels.",
+      "jobDescription": "Own the DTC number. Steward brand voice end-to-end. Lead the product roadmap through the Senior Product Manager. Partner with Operations on launches.",
+      "note": "Consolidated leadership of Brand, Product, and DTC Ecom under a single accountable seat.",
+      "coachId": "ceo",
+      "directSupports": ["sr-product-mgr", "perf-marketing", "ecom-mgr", "marketing-mgr", "art-director", "chef-rd"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Hit the DTC revenue plan",
+          "desiredResult": "Own the DTC number. Build and run the merchandising and promotional calendar.",
+          "successMetric": "DTC revenue at or above plan by quarter. Conversion rate trending up YoY. AOV at or above plan.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "Hold the 12–18 month product roadmap",
+          "desiredResult": "Partner with the Senior Product Manager on a published roadmap that reflects strategic priorities.",
+          "successMetric": "Roadmap reviewed with LT quarterly. Every active concept has a named Stage-Gate status.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 3,
+          "name": "Steward brand voice end-to-end",
+          "desiredResult": "Partner with Art Director, Marketing Manager, and CEO on brand-voice consistency.",
+          "successMetric": "Brand voice guidelines documented and referenced in every creative brief.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 4,
+          "name": "Land the 2026 launch calendar on time, on brand, on margin",
+          "desiredResult": "Drive Holiday 2026, grab-and-go, and seasonal launches through the org.",
+          "successMetric": "Holiday 2026 shipped on schedule with ≥95% of SKUs hitting planned launch date.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 5,
+          "name": "Run peak-season without operational failure",
+          "desiredResult": "Partner with Operations, NPD, and Customer Service on peak-period readiness.",
+          "successMetric": "Holiday and Mother's Day peaks run within plan. OTIF ≥ target through peak.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "DTC e-commerce leadership on Shopify Plus",
+        "Brand + product + commercial fluency in a single seat",
+        "Cross-functional launch management"
+      ],
+      "currentState": {
+        "exists": true,
+        "parentId": "ceo",
+        "directSupports": ["sr-product-mgr", "perf-marketing", "ecom-mgr", "marketing-mgr", "art-director"]
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "ceo",
+        "directSupports": ["chef-rd", "sr-product-mgr", "perf-marketing", "ecom-mgr", "marketing-mgr", "art-director"]
+      }
+    },
+    {
+      "id": "dir-sales",
+      "tabNumber": 4,
+      "title": "Director of Sales",
+      "shortTitle": "Dir of Sales",
+      "pillar": "selling",
+      "currentHolder": null,
+      "holderStatus": "tbd",
+      "location": "Chicago (on-site initially, hybrid eligible after onboarding)",
+      "purposeOfRole": "Lead the B2B Sales organization — ensuring salespeople have the tools, processes, and support they need to capture and protect revenue.",
+      "jobDescription": "Build and lead the B2B Sales organization, starting with Corporate Gifting and extending into Wholesale and Private Label.",
+      "note": "Andy's gold-standard scorecard — the structural reference for every other role.",
+      "coachId": "ceo",
+      "directSupports": ["sales-account-mgr", "jr-account-mgr", "wholesale-pl", "denise", "ian", "regional-gm"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Establish and lead the B2B Sales organization structure",
+          "desiredResult": "Build the foundation — Sales Ops support, defined roles, training, and pipeline management.",
+          "successMetric": "B2B Sales org fully operational with clear accountability. Salespeople focused exclusively on selling.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "Partner with Director of Operations on SLAs",
+          "desiredResult": "Define mutual commitments between Sales and Operations — lead times, cutoffs, escalation paths.",
+          "successMetric": "Documented SLAs in place and honored by both sides. Weekly Sales & Ops meeting running.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 3,
+          "name": "Reconfigure HubSpot for B2B",
+          "desiredResult": "Partner with Head of Technology to rebuild HubSpot with proper pipelines and stages.",
+          "successMetric": "B2B pipeline live with win/loss tracking. Weekly reporting on pipeline health.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 4,
+          "name": "Establish standardized B2B offering and sales materials",
+          "desiredResult": "Define approved configurations, customization rules, lead times, MOQs, and pricing tiers.",
+          "successMetric": "Published B2B catalog/menu live in 2026. Salespeople can confidently commit to customers.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 5,
+          "name": "Protect B2B revenue through risk management",
+          "desiredResult": "Build the visibility and cadence that flags at-risk orders before the customer feels it.",
+          "successMetric": "Fulfillment-driven sales losses down 50% vs H2 2025. Risks flagged ≥48 hours ahead.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "B2B sales leadership with cross-functional influence",
+        "Process improvement and systems thinking",
+        "Pipeline management and forecasting"
+      ],
+      "currentState": {
+        "exists": false,
+        "parentId": null
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "ceo"
+      }
+    },
+    {
+      "id": "regional-gm",
+      "tabNumber": 5,
+      "title": "Retail Sales GM",
+      "shortTitle": "Retail Sales GM",
+      "pillar": "selling",
+      "currentHolder": "Marck Valenzuela",
+      "holderStatus": "filled",
+      "location": "Chicago (multi-unit)",
+      "purposeOfRole": "Own the P&L and customer experience of the retail boutiques — from flagship to airport — ensuring every Vosges location amplifies the brand and drives revenue.",
+      "jobDescription": "Drive revenue and margin across all boutiques. Hire, train, and develop boutique leadership. Use airport locations as brand amplifiers to drive e-commerce adoption.",
+      "note": "Title changed from 'Regional General Manager' to 'Retail Sales GM' per FigJam. Andy requested new title — all stores are in one city. Focus shifted from 'theater of chocolate' to foot traffic and brand amplification at O'Hare.",
+      "coachId": "dir-sales",
+      "directSupports": ["gm-ohare", "concierge-boutique"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Hit retail revenue + margin plan",
+          "desiredResult": "Own the multi-unit P&L. Manage labor cost. Hit contribution margin by unit.",
+          "successMetric": "Retail revenue at or above plan by unit. Labor-as-percent-of-revenue within target.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "Increase foot traffic and transaction value at O'Hare boutiques",
+          "desiredResult": "Use airport presence to amplify the brand to non-Chicago travelers. Turn boutique customers into e-commerce customers.",
+          "successMetric": "Foot traffic trending up QoQ. Average transaction value increasing. Measurable e-commerce conversion from boutique interactions.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Multi-unit retail management",
+        "Brand experience delivery",
+        "Airport retail operations"
+      ],
+      "currentState": {
+        "exists": true,
+        "parentId": "ceo",
+        "title": "Regional General Manager"
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "dir-sales",
+        "title": "Retail Sales GM"
+      }
+    },
+    {
+      "id": "hr-manager",
+      "tabNumber": 6,
+      "title": "HR Manager",
+      "shortTitle": "HR Manager",
+      "pillar": "connective",
+      "currentHolder": "Hanah Mathius",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Build and steward Vosges as a place where people can do the best work of their careers.",
+      "jobDescription": "Own end-to-end people operations: recruiting, onboarding, benefits, payroll oversight, compliance, performance management, and culture.",
+      "note": "Connective service — reports to CEO, serves every function.",
+      "coachId": "ceo",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Steward the scorecard-and-OKR operating system",
+          "desiredResult": "Train managers on scorecards, OKRs, and 1:1s. Make every leader use them — not as a document, as a practice.",
+          "successMetric": "100% of LT on active scorecards with quarterly coaching. Manager certification on the system completed by Q2.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "People operations and compliance",
+        "Culture building in startup environment",
+        "Performance management systems"
+      ],
+      "currentState": {
+        "exists": true,
+        "parentId": "ceo"
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "ceo"
+      }
+    },
+    {
+      "id": "sr-product-mgr",
+      "tabNumber": 7,
+      "title": "Senior Product Manager",
+      "shortTitle": "Sr Product Mgr",
+      "pillar": "meaning",
+      "currentHolder": "Amanda Benfield",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Lead New Product Development for Vosges — owning the portfolio strategy, product roadmap, and Stage-Gate process.",
+      "jobDescription": "Define and hold the 12–18 month product roadmap. Own Stage-Gate. Partner with the Chef / R&D Director on recipe and feasibility. Coach the R&D team and run the taste test program.",
+      "note": "Peer to Chef / R&D Director; both report to Director of Ecom. Takes on taste test program and R&D coaching from Chef (per 04-18 review).",
+      "coachId": "dir-ecom",
+      "directSupports": ["product-ops"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Establish the 12–18 month product roadmap",
+          "desiredResult": "Publish and update the roadmap quarterly. Balance load against team capacity. Achieve the roadmap by end of 2026.",
+          "successMetric": "Roadmap reviewed with LT quarterly. Every active concept has named Stage-Gate status.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "Run the taste test program and coach R&D team",
+          "desiredResult": "Own sensory evaluation. Build the R&D team's capability (moved from Chef per 04-18 review).",
+          "successMetric": "Taste test cadence held. R&D team receiving regular coaching.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 3,
+          "name": "Partner with Chef on SKU rationalization",
+          "desiredResult": "Complete a robust SKU rationalization for 2026.",
+          "successMetric": "Rationalization framework published. Target portfolio size achieved.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Product management and Stage-Gate leadership",
+        "Portfolio strategy and rationalization",
+        "Cross-functional program management"
+      ],
+      "currentState": {
+        "exists": true,
+        "parentId": "dir-ecom",
+        "title": "Sr Product Manager"
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "dir-ecom"
+      }
+    },
+    {
+      "id": "perf-marketing",
+      "tabNumber": 8,
+      "title": "Performance Marketing Manager",
+      "shortTitle": "Perf Marketing Mgr",
+      "pillar": "meaning",
+      "currentHolder": "Sarah Ruttgers",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Own paid acquisition, CRM performance, and attribution analytics for Vosges DTC.",
+      "jobDescription": "Own paid media (Meta, Google, programmatic), SEO, affiliate, and CRM performance. Run attribution and cohort analysis.",
+      "note": "Performance-focused counterpart to the Marketing Manager (brand + content side).",
+      "coachId": "dir-ecom",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Hit blended ROAS target",
+          "desiredResult": "Own paid social, search, and display. Drive daily channel optimization.",
+          "successMetric": "Blended ROAS at or above plan quarterly. Channel-level ROAS within target.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Paid media optimization",
+        "Attribution modeling",
+        "CRM performance management"
+      ],
+      "currentState": { "exists": true, "parentId": "dir-ecom" },
+      "proposedState": { "exists": true, "parentId": "dir-ecom" }
+    },
+    {
+      "id": "ecom-mgr",
+      "tabNumber": 9,
+      "title": "Ecom Manager",
+      "shortTitle": "Ecom Manager",
+      "pillar": "meaning",
+      "currentHolder": "Will Bristol",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Run the day-to-day of the Vosges Shopify Plus storefront — merchandising, site operations, conversion optimization.",
+      "jobDescription": "Own Shopify Plus day-to-day: product data, collections, merchandising, site content, pricing, promo setup. Own the sales-related technology stack.",
+      "note": "Operational counterpart to the Director of Ecom — the hands on Shopify every day. Per 04-18 review: owns sales-related tech, works closely with Customer Tech Ops.",
+      "coachId": "dir-ecom",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Hit the Shopify Plus DTC plan",
+          "desiredResult": "Own site merchandising, promo execution, and daily trading rhythm.",
+          "successMetric": "DTC revenue at or above plan monthly. Site trading reviewed daily.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Shopify Plus operations",
+        "Conversion optimization",
+        "Sales technology stack management"
+      ],
+      "currentState": { "exists": true, "parentId": "dir-ecom" },
+      "proposedState": { "exists": true, "parentId": "dir-ecom" }
+    },
+    {
+      "id": "marketing-mgr",
+      "tabNumber": 10,
+      "title": "Marketing Manager",
+      "shortTitle": "Marketing Mgr",
+      "pillar": "meaning",
+      "currentHolder": "Ash Mishler",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Plan and execute the marketing calendar — campaigns, content, email, and brand storytelling.",
+      "jobDescription": "Own campaign strategy across seasonal launches and evergreen brand storytelling.",
+      "note": "Brand + content counterpart to Performance Marketing Manager.",
+      "coachId": "dir-ecom",
+      "directSupports": ["jr-marketing-coord"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Deliver the 2026 campaign calendar",
+          "desiredResult": "Build, publish, and execute the full calendar.",
+          "successMetric": "100% of campaigns launch on calendar date.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Campaign strategy and execution",
+        "Brand storytelling",
+        "Cross-functional creative briefing"
+      ],
+      "currentState": { "exists": true, "parentId": "dir-ecom" },
+      "proposedState": { "exists": true, "parentId": "dir-ecom" }
+    },
+    {
+      "id": "art-director",
+      "tabNumber": 11,
+      "title": "Art Director",
+      "shortTitle": "Art Director",
+      "pillar": "meaning",
+      "currentHolder": "Kelsey Craig",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Own the creative voice and visual identity of the Vosges brand.",
+      "jobDescription": "Direct the visual brand across packaging, site, email, paid, retail, and PR. Manage internal design team plus contractors.",
+      "note": "Creative authority; peer to Marketing Manager under Director of Ecom. Title may change to Creative Director (Jen's intent for Kelsey promotion — timing unclear).",
+      "coachId": "dir-ecom",
+      "directSupports": ["sr-designer", "designer"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Steward the Vosges visual system",
+          "desiredResult": "Own the design system, component library, and brand standards.",
+          "successMetric": "Design system documented and adopted across teams. Quarterly updates shipped.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Visual brand direction",
+        "Design team management",
+        "Packaging and print expertise"
+      ],
+      "currentState": { "exists": true, "parentId": "dir-ecom" },
+      "proposedState": { "exists": true, "parentId": "dir-ecom" }
+    },
+    {
+      "id": "sr-designer",
+      "tabNumber": 12,
+      "title": "Senior Designer",
+      "shortTitle": "Sr Designer",
+      "pillar": "meaning",
+      "currentHolder": "Alyssa Welch",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid) or remote",
+      "purposeOfRole": "Be the senior creative executor — leading hero campaign, packaging, and brand-system work under Art Director.",
+      "jobDescription": "Lead execution of high-visibility creative: hero campaign assets, packaging, brand-system evolution.",
+      "note": "Currently on contract. Intent: convert to FTE. Scorecard deferred pending Alyssa's Figma document.",
+      "coachId": "art-director",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Lead hero campaign and launch creative",
+          "desiredResult": "Own design execution for every 2026 hero launch.",
+          "successMetric": "100% of hero launches shipped on calendar. Zero launches missing senior creative leadership.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Hero campaign creative", "Packaging design", "Brand system evolution"],
+      "currentState": { "exists": true, "parentId": "art-director", "title": "Contract Sr Designer" },
+      "proposedState": { "exists": true, "parentId": "art-director" }
+    },
+    {
+      "id": "designer",
+      "tabNumber": 13,
+      "title": "Designer",
+      "shortTitle": "Designer",
+      "pillar": "meaning",
+      "currentHolder": "Arlen Cornejo",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Be the day-to-day design executor across Vosges touchpoints.",
+      "jobDescription": "Execute brand-aligned design across campaign, email, social, site, and supporting packaging work.",
+      "note": "IC designer under Art Director. Scorecard deferred pending Alyssa's Figma document.",
+      "coachId": "art-director",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Print + packaging ramp",
+          "desiredResult": "Develop advanced expertise in print and packaging.",
+          "successMetric": "Month 1 observation. Month 2 participating. Months 3–6 fully handling packaging projects.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Multi-channel design execution", "Print and packaging", "Brand consistency"],
+      "currentState": { "exists": true, "parentId": "art-director" },
+      "proposedState": { "exists": true, "parentId": "art-director" }
+    },
+    {
+      "id": "chef-rd",
+      "tabNumber": 14,
+      "title": "Chef / R&D Director",
+      "shortTitle": "Chef / R&D",
+      "pillar": "meaning",
+      "currentHolder": "Eric Perez",
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Be the creative and technical flavor authority for Vosges — developing recipes, prototyping new formats, and ensuring the product is worthy of the brand.",
+      "jobDescription": "Lead chocolate and confectionery R&D. Formulate new recipes. Prototype, iterate, and hand off to production. Partner with Ops Manager on techniques and Senior Product Manager on SKU rationalization.",
+      "note": "KEY STRUCTURAL MOVE: Moves from Director of Operations (Steve) to Director of Ecom (Jen). Peer to Senior Product Manager. Not a team coach — coaching responsibilities moved to Sr Product Manager per 04-18 review.",
+      "coachId": "dir-ecom",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Deliver the R&D pipeline on-time, on-brand",
+          "desiredResult": "Move assigned concepts from prototype to Stage 4 on Stage-Gate timelines.",
+          "successMetric": "100% Stage-4 delivery on schedule. Zero concepts stuck in prototype >90 days.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "Partner with Ops Manager to improve techniques and procedures",
+          "desiredResult": "Work with Melissa to improve production techniques and procedures for current products.",
+          "successMetric": "Measurable improvement in production consistency and quality.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 3,
+          "name": "Partner with Sr Product Manager on SKU rationalization",
+          "desiredResult": "Complete a robust SKU rationalization for 2026.",
+          "successMetric": "Rationalization targets met. Portfolio streamlined.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Chocolate and confectionery R&D",
+        "Recipe formulation and prototyping",
+        "Ingredient expertise and sourcing knowledge"
+      ],
+      "currentState": {
+        "exists": true,
+        "parentId": "dir-ops",
+        "note": "Currently reports to Steve Palumbo (Director of Operations)"
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "dir-ecom",
+        "note": "Moves to Brand & Product Engine under Jen Hockey"
+      }
+    },
+    {
+      "id": "product-ops",
+      "tabNumber": 15,
+      "title": "Product Operations Specialist",
+      "shortTitle": "Product Ops",
+      "pillar": "meaning",
+      "currentHolder": "Michael Sanchez",
+      "holderStatus": "filled",
+      "location": "Chicago (on-site/hybrid)",
+      "purposeOfRole": "Be the technical and data right-hand to the Senior Product Manager and Chef / R&D Director — owning BOMs, MRP, Flavor Studio, and Fishbowl data for NPD.",
+      "jobDescription": "Own BOMs, MRP logic, Flavor Studio recipe data, and Fishbowl product/costcode data. Partner with Chef and Ops Manager on improving bill of materials and procedures.",
+      "note": "Data/systems seat in the NPD three-seat team. Per 04-18 review: initiative changed from 'restart BOMs 2.0' to 'partner with Chef and Ops Mgr on improving BOMs and procedures.'",
+      "coachId": "sr-product-mgr",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Partner with Chef and Ops Manager on BOMs and procedures",
+          "desiredResult": "Support the improvement of bill of materials and production procedures.",
+          "successMetric": "Active SKUs with accurate BOMs in Fishbowl. Maintenance model documented.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["BOM management", "ERP data stewardship", "Recipe-to-production data flow"],
+      "currentState": { "exists": false, "parentId": null },
+      "proposedState": { "exists": true, "parentId": "sr-product-mgr" }
+    },
+    {
+      "id": "jr-marketing-coord",
+      "tabNumber": 16,
+      "title": "Junior Marketing Coordinator",
+      "shortTitle": "Jr Marketing Coord",
+      "pillar": "meaning",
+      "currentHolder": null,
+      "holderStatus": "eoy-hire",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Support the Marketing Manager on campaign execution.",
+      "jobDescription": "Traffic creative assets, build and schedule emails, maintain the social calendar, write first-draft copy.",
+      "note": "Future role planned for end of 2026 as Marketing bandwidth expands.",
+      "coachId": "marketing-mgr",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Execute campaign calendar tactics",
+          "desiredResult": "Build emails, social posts, and landing updates on schedule.",
+          "successMetric": "100% of tactics shipped on calendar date. Zero missed sends.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Campaign execution", "Email marketing", "Social media management"],
+      "currentState": { "exists": false, "parentId": null },
+      "proposedState": { "exists": true, "parentId": "marketing-mgr" }
+    },
+    {
+      "id": "sales-account-mgr",
+      "tabNumber": 17,
+      "title": "Sales Account Manager",
+      "shortTitle": "Sales Account Mgr",
+      "pillar": "selling",
+      "currentHolder": null,
+      "holderStatus": "tbd",
+      "location": "Chicago (on-site/hybrid)",
+      "purposeOfRole": "Carry a portfolio of Vosges B2B corporate-gifting accounts.",
+      "jobDescription": "Own a named book of corporate-gifting accounts. Prospect, pitch, and close new business. Grow existing accounts.",
+      "note": "Front-line seller role. Denise Saladino and Ian Thomas use this scorecard template for their Corporate Gifting roles.",
+      "coachId": "dir-sales",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Hit B2B revenue quota",
+          "desiredResult": "Own assigned accounts. Grow existing. Prospect and close new.",
+          "successMetric": "Quota attainment ≥100% quarterly. Pipeline coverage ≥3x quarterly quota.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["B2B sales execution", "Account management", "Pipeline management"],
+      "currentState": { "exists": false, "parentId": null },
+      "proposedState": { "exists": true, "parentId": "dir-sales" }
+    },
+    {
+      "id": "denise",
+      "tabNumber": null,
+      "title": "Corporate Gifting",
+      "shortTitle": "Corp Gifting (Denise)",
+      "pillar": "selling",
+      "currentHolder": "Denise Saladino",
+      "holderStatus": "filled",
+      "location": "Chicago",
+      "purposeOfRole": "Corporate gifting sales — uses Sales Account Manager scorecard.",
+      "jobDescription": null,
+      "note": "Uses Sales Account Manager scorecard template. Currently reports to CEO; moves to Director of Sales.",
+      "coachId": "dir-sales",
+      "directSupports": [],
+      "scorecardRef": "sales-account-mgr",
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "ceo" },
+      "proposedState": { "exists": true, "parentId": "dir-sales" }
+    },
+    {
+      "id": "ian",
+      "tabNumber": null,
+      "title": "Corporate Gifting",
+      "shortTitle": "Corp Gifting (Ian)",
+      "pillar": "selling",
+      "currentHolder": "Ian Thomas",
+      "holderStatus": "filled",
+      "location": "Chicago",
+      "purposeOfRole": "Corporate gifting sales — uses Sales Account Manager scorecard.",
+      "jobDescription": null,
+      "note": "Uses Sales Account Manager scorecard template. Currently reports to CEO; moves to Director of Sales.",
+      "coachId": "dir-sales",
+      "directSupports": [],
+      "scorecardRef": "sales-account-mgr",
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "ceo" },
+      "proposedState": { "exists": true, "parentId": "dir-sales" }
+    },
+    {
+      "id": "jr-account-mgr",
+      "tabNumber": 18,
+      "title": "Junior Account Manager",
+      "shortTitle": "Jr Account Mgr",
+      "pillar": "selling",
+      "currentHolder": null,
+      "holderStatus": "eoy-hire",
+      "location": "Chicago (on-site/hybrid)",
+      "purposeOfRole": "Support Sales Account Managers and the Director of Sales — handling inbound leads, account research, proposal prep.",
+      "jobDescription": "Qualify inbound leads. Run account research. Prep proposals. Own follow-up on stalled deals.",
+      "note": "EOY 2026 hire. Per 04-18 review: 'Manage house accounts' removed — no house accounts in 2026. New focus: partner with ops for Q4 peak corporate gifting execution.",
+      "coachId": "dir-sales",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Partner with operations for successful Q4 peak corporate gifting",
+          "desiredResult": "Ensure operational readiness for Q4 corporate gifting surge.",
+          "successMetric": "Q4 fulfillment targets met. Zero customer-facing failures from ops gaps.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Account support and research", "Proposal preparation", "Pipeline hygiene"],
+      "currentState": { "exists": false, "parentId": null },
+      "proposedState": { "exists": true, "parentId": "dir-sales" }
+    },
+    {
+      "id": "wholesale-pl",
+      "tabNumber": 19,
+      "title": "Wholesale & Private Label Sales",
+      "shortTitle": "Wholesale / PL",
+      "pillar": "selling",
+      "currentHolder": null,
+      "holderStatus": "eoy-hire",
+      "location": "Chicago (hybrid, travel required)",
+      "purposeOfRole": "Build Vosges' wholesale and private-label business.",
+      "jobDescription": "Own wholesale account acquisition and growth. Manage the Faire relationship alongside Prosper Lab. Develop private-label pipeline in partnership with COO.",
+      "note": "EOY 2026 hire. Per 04-18 review: co-owns private label opportunities with COO (Jay).",
+      "coachId": "dir-sales",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Build the Wholesale and Private Label pipeline",
+          "desiredResult": "Source, qualify, and close wholesale and private-label accounts. Partner with Prosper Lab on Faire.",
+          "successMetric": "Pipeline value at or above plan quarterly. Closed-won revenue at or above plan.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Wholesale sales", "Private label development", "Channel partnership management"],
+      "currentState": { "exists": false, "parentId": null },
+      "proposedState": { "exists": true, "parentId": "dir-sales" }
+    },
+    {
+      "id": "dir-ops",
+      "tabNumber": 20,
+      "title": "Director of Operations",
+      "shortTitle": "Dir of Ops",
+      "pillar": "making",
+      "currentHolder": "Steve Palumbo",
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Serve as the strategic #2 to the COO for all of Operations — owning the integrated operating plan.",
+      "jobDescription": "Translate the COO's operating priorities into an integrated Operations plan. Run Production, Procurement, Quality, and Customer Service. Own the operations cadence.",
+      "note": "QA Manager and Customer Service Manager moved under this seat from COO. Per 04-18 review: absorbs 'install and run unified operating cadence' from COO.",
+      "coachId": "coo",
+      "directSupports": ["ops-mgr", "procurement-mgr", "qa-manager", "cust-service-mgr"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Run the integrated Operations plan",
+          "desiredResult": "Own a rolling 13-week production, fulfillment, and capacity plan. Install and run the unified operating cadence.",
+          "successMetric": "13-week plan variance ≤10%. Weekly readout delivered on time.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": [
+        "Integrated operations planning",
+        "Cross-functional operational leadership",
+        "Operating cadence management"
+      ],
+      "currentState": {
+        "exists": true,
+        "parentId": "coo",
+        "directSupports": ["ops-mgr", "fulfillment-super", "chef-rd", "supply-chain-mgr", "maintenance"]
+      },
+      "proposedState": {
+        "exists": true,
+        "parentId": "coo",
+        "directSupports": ["ops-mgr", "procurement-mgr", "qa-manager", "cust-service-mgr"]
+      }
+    },
+    {
+      "id": "ops-mgr",
+      "tabNumber": 21,
+      "title": "Ops Manager",
+      "shortTitle": "Ops Manager",
+      "pillar": "making",
+      "currentHolder": "Melissa Lechuga",
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Run the day-to-day of the factory floor — production, assembly, fulfillment, warehouse, and maintenance.",
+      "jobDescription": "Be the senior presence on the floor. Own daily production huddles, shift handoffs, and execution. Partner with Customer Tech Ops on ShipStation and order-related tech issues.",
+      "note": "Floor lead — most senior operational presence in the building day-to-day.",
+      "coachId": "dir-ops",
+      "directSupports": ["fulfillment-super", "prod-supervisors", "warehouse", "maintenance"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Hit daily and weekly production targets",
+          "desiredResult": "Run daily huddles and clean shift handoffs. Remove blockers in real time.",
+          "successMetric": "Weekly plan attainment ≥90%. Daily huddles held 5x/week.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Factory floor management", "Production scheduling", "Team leadership"],
+      "currentState": { "exists": true, "parentId": "dir-ops" },
+      "proposedState": { "exists": true, "parentId": "dir-ops" }
+    },
+    {
+      "id": "fulfillment-super",
+      "tabNumber": 22,
+      "title": "Fulfillment Supervisor",
+      "shortTitle": "Fulfillment Super",
+      "pillar": "making",
+      "currentHolder": "Carol Fortin",
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Lead the daily execution of Vosges' pick / pack / ship operation.",
+      "jobDescription": "Own daily fulfillment — picking, packing, shipping — across DTC, B2B, wholesale, and retail replenishment.",
+      "note": "Floor-level fulfillment leader under Ops Manager.",
+      "coachId": "ops-mgr",
+      "directSupports": ["shipping"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Ship orders on time, accurately",
+          "desiredResult": "Own daily pick, pack, label, and ship throughput.",
+          "successMetric": "Ship-on-time ≥98% daily. Peak throughput within plan.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Fulfillment operations", "Team scheduling", "Order accuracy management"],
+      "currentState": { "exists": true, "parentId": "dir-ops", "title": "Fulfillment Supervisors" },
+      "proposedState": { "exists": true, "parentId": "ops-mgr" }
+    },
+    {
+      "id": "procurement-mgr",
+      "tabNumber": 23,
+      "title": "Procurement Manager",
+      "shortTitle": "Procurement Mgr",
+      "pillar": "making",
+      "currentHolder": "Teresa Diaz",
+      "holderStatus": "filled",
+      "location": "Chicago (on-site/hybrid)",
+      "purposeOfRole": "Own end-to-end sourcing, purchasing, and inventory management.",
+      "jobDescription": "Lead sourcing and purchasing for all ingredients, packaging, and indirect materials. Manage vendor relationships. Own inventory levels.",
+      "note": "Title changed from 'Supply Chain Manager' to 'Procurement Manager'. Per 04-18 review: must include 'no out-of-stocks on everyday items' initiative. Owns stock-level OKRs for Dir Ops.",
+      "coachId": "dir-ops",
+      "directSupports": ["inventory-specialist"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Build vendor and sourcing strategy",
+          "desiredResult": "Segment vendors by criticality. Qualify dual sources on Class-A items.",
+          "successMetric": "2+ qualified sources for every Class-A item.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "No out-of-stocks on everyday items",
+          "desiredResult": "Prevent stockouts on core/everyday SKUs. Own the stock-level OKRs.",
+          "successMetric": "Zero out-of-stocks on everyday items. OKR targets met.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Strategic sourcing", "Vendor management", "Inventory optimization"],
+      "currentState": { "exists": true, "parentId": "dir-ops", "title": "Supply Chain Manager" },
+      "proposedState": { "exists": true, "parentId": "dir-ops" }
+    },
+    {
+      "id": "inventory-specialist",
+      "tabNumber": 24,
+      "title": "Inventory Specialist",
+      "shortTitle": "Inventory Spec",
+      "pillar": "making",
+      "currentHolder": "Natasha Morales",
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Own the data discipline of Vosges inventory — cycle counts, receiving accuracy, Fishbowl integrity.",
+      "jobDescription": "Execute cycle counts. Reconcile Fishbowl against physical inventory. Own receiving accuracy. Maintain reorder points.",
+      "note": "Reports to Procurement Manager. In Current state, was 'Fulfillment Supervisor' under Supply Chain — role refocused.",
+      "coachId": "procurement-mgr",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Maintain Fishbowl inventory accuracy",
+          "desiredResult": "Run daily cycle counts on assigned zones. Reconcile variances within 48 hours.",
+          "successMetric": "Inventory accuracy ≥98% monthly. Variances resolved within 48 hours ≥95% of the time.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Cycle counting", "ERP data integrity", "Receiving and reconciliation"],
+      "currentState": { "exists": true, "parentId": "procurement-mgr" },
+      "proposedState": { "exists": true, "parentId": "procurement-mgr" }
+    },
+    {
+      "id": "qa-manager",
+      "tabNumber": 25,
+      "title": "QA Manager",
+      "shortTitle": "QA Manager",
+      "pillar": "making",
+      "currentHolder": "Kaylyn Doyle & Dustin Steva",
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Protect Vosges customers, team members, and brand by owning food safety, quality assurance, and regulatory compliance.",
+      "jobDescription": "Own food safety (SQF, HACCP, GMP), quality assurance programs, and regulatory compliance.",
+      "note": "KEY STRUCTURAL MOVE: Moves from COO to Director of Operations. Consolidated QA leadership.",
+      "coachId": "dir-ops",
+      "directSupports": ["sanitation"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Pass SQF with zero major NCs",
+          "desiredResult": "Mock audits, gap closure, training, and audit execution.",
+          "successMetric": "SQF passed on schedule with zero major non-conformances.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["SQF/HACCP/GMP compliance", "Quality assurance programs", "Regulatory management"],
+      "currentState": { "exists": true, "parentId": "coo" },
+      "proposedState": { "exists": true, "parentId": "dir-ops" }
+    },
+    {
+      "id": "cust-service-mgr",
+      "tabNumber": 26,
+      "title": "Customer Service Manager",
+      "shortTitle": "Cust Service Mgr",
+      "pillar": "making",
+      "currentHolder": "Kathy Kearney",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Lead the Chocolate Concierge Department so every Vosges customer receives responsive, empathetic, brand-appropriate service.",
+      "jobDescription": "Manage and mentor the service team. Own CSAT, NPS, response-time, and contact-deflection KPIs.",
+      "note": "KEY STRUCTURAL MOVE: Moves from COO to Director of Operations. Partners closely with Customer Tech Operations.",
+      "coachId": "dir-ops",
+      "directSupports": ["concierge-ccd"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Hit CSAT, NPS, and response-time targets",
+          "desiredResult": "Own the top service KPIs. Build standards. Audit weekly.",
+          "successMetric": "First-response SLA met ≥95%. CSAT at or above target. NPS trending up QoQ.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Customer service leadership", "KPI management", "Team coaching"],
+      "currentState": { "exists": true, "parentId": "coo", "note": "Currently under COO, unclear reporting" },
+      "proposedState": { "exists": true, "parentId": "dir-ops" }
+    },
+    {
+      "id": "head-tech",
+      "tabNumber": 27,
+      "title": "Head of Technology",
+      "shortTitle": "Head of Tech",
+      "pillar": "connective",
+      "currentHolder": "Max Frank",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Own the technology backbone of Vosges — Shopify, Fishbowl, Flavor Studio, HubSpot, data integrations, infrastructure.",
+      "jobDescription": "Own technology strategy, architecture, vendor management, and data integration. Maintain and evolve the core stack.",
+      "note": "IT box on the org chart = this seat (per Andy). Connective service under COO.",
+      "coachId": "coo",
+      "directSupports": ["cust-tech-ops"],
+      "scorecardRef": null,
+      "hasScorecard": true,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Publish the tech roadmap and architecture",
+          "desiredResult": "Document the current-state architecture. Build a 12-month roadmap tied to business outcomes.",
+          "successMetric": "Architecture and roadmap published and reviewed with LT quarterly.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Technology strategy", "Architecture planning", "Vendor management"],
+      "currentState": { "exists": true, "parentId": "coo" },
+      "proposedState": { "exists": true, "parentId": "coo" }
+    },
+    {
+      "id": "cust-tech-ops",
+      "tabNumber": 28,
+      "title": "Customer Tech Operations",
+      "shortTitle": "Cust Tech Ops",
+      "pillar": "connective",
+      "currentHolder": "Sarah Bornhorst",
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "Own the customer-facing technology stack — Gorgias, HubSpot (sales CRM, NOT service), Shopify integrations, Zest, ShipperHQ.",
+      "jobDescription": "Stabilize and maintain the customer-facing tech stack. Reduce WISMO tickets via Gorgias AI. Partner with Sales Director to enable HubSpot capabilities for lead capture and conversion.",
+      "note": "⚠️ SCORECARD UNDER REVIEW (Andy flagged 2026-04-18). Uses Head of Technology scorecard via inheritance. Per 04-18 review: HubSpot is for sales CRM/B2B marketing, NOT service. Initiatives split: (1) Gorgias/WISMO reduction, (2) HubSpot strategic capabilities with Sales Director.",
+      "coachId": "head-tech",
+      "directSupports": [],
+      "scorecardRef": "head-tech",
+      "hasScorecard": false,
+      "initiatives": [
+        {
+          "priority": 1,
+          "name": "Stabilize the customer-facing tech stack",
+          "desiredResult": "Audit every tool. Close gaps. Document owners and escalation paths.",
+          "successMetric": "Zero CX failures from misconfiguration by Q3. Tool inventory current.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 2,
+          "name": "Reduce WISMO tickets and generate revenue via Gorgias AI",
+          "desiredResult": "Own 'Where Is My Order' ticket reduction using Gorgias AI capabilities.",
+          "successMetric": "WISMO ticket volume down QoQ. AI resolution rate trending up.",
+          "coachFeedback": null
+        },
+        {
+          "priority": 3,
+          "name": "Partner with Sales Director to enable HubSpot strategic capabilities",
+          "desiredResult": "Enable lead capture, prospecting, and deal closure workflows in HubSpot.",
+          "successMetric": "HubSpot pipelines live and adopted by sales team. Lead-to-close tracking operational.",
+          "coachFeedback": null
+        }
+      ],
+      "skills": ["Customer-facing tech stack management", "CRM configuration", "AI-powered customer service"],
+      "currentState": { "exists": true, "parentId": "head-tech", "note": "Sarah B's role currently spans order processing and tech support — being refocused" },
+      "proposedState": { "exists": true, "parentId": "head-tech" }
+    },
+    {
+      "id": "gm-ohare",
+      "tabNumber": null,
+      "title": "GM O'Hare",
+      "shortTitle": "GM O'Hare",
+      "pillar": "selling",
+      "currentHolder": "Ivana Savic",
+      "holderStatus": "filled",
+      "location": "Chicago — O'Hare Airport",
+      "purposeOfRole": "Manage the two O'Hare airport boutiques.",
+      "jobDescription": null,
+      "note": "Reports to Retail Sales GM (Mark). No standalone scorecard.",
+      "coachId": "regional-gm",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "regional-gm" },
+      "proposedState": { "exists": true, "parentId": "regional-gm" }
+    },
+    {
+      "id": "concierge-boutique",
+      "tabNumber": null,
+      "title": "Chocolate Concierge Team (Boutique)",
+      "shortTitle": "Concierge (Boutique)",
+      "pillar": "selling",
+      "currentHolder": null,
+      "holderStatus": "filled",
+      "location": "Chicago — O'Hare",
+      "purposeOfRole": "Front-line boutique staff.",
+      "jobDescription": null,
+      "note": "No standalone scorecard. Team role.",
+      "coachId": "regional-gm",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "regional-gm" },
+      "proposedState": { "exists": true, "parentId": "regional-gm" }
+    },
+    {
+      "id": "prod-supervisors",
+      "tabNumber": null,
+      "title": "Production Supervisors",
+      "shortTitle": "Prod Supervisors",
+      "pillar": "making",
+      "currentHolder": "Edna Menendez, Carmen Valdez, Norma Dorantes",
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Lead production shifts.",
+      "jobDescription": null,
+      "note": "No standalone scorecard. Report to Ops Manager.",
+      "coachId": "ops-mgr",
+      "directSupports": ["prod-staff"],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "ops-mgr" },
+      "proposedState": { "exists": true, "parentId": "ops-mgr" }
+    },
+    {
+      "id": "warehouse",
+      "tabNumber": null,
+      "title": "Warehouse & Freezer Associates",
+      "shortTitle": "Warehouse",
+      "pillar": "making",
+      "currentHolder": null,
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Warehouse and cold storage operations.",
+      "jobDescription": null,
+      "note": "No standalone scorecard.",
+      "coachId": "ops-mgr",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "ops-mgr" },
+      "proposedState": { "exists": true, "parentId": "ops-mgr" }
+    },
+    {
+      "id": "maintenance",
+      "tabNumber": null,
+      "title": "Maintenance Technicians",
+      "shortTitle": "Maintenance",
+      "pillar": "making",
+      "currentHolder": "Mohammed Rizvy & Leszek Chojan",
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Facility and equipment maintenance.",
+      "jobDescription": null,
+      "note": "No standalone scorecard. In Current state reports to Dir Ops; in Proposed moves under Ops Manager.",
+      "coachId": "ops-mgr",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "dir-ops" },
+      "proposedState": { "exists": true, "parentId": "ops-mgr" }
+    },
+    {
+      "id": "shipping",
+      "tabNumber": null,
+      "title": "Shipping Specialists",
+      "shortTitle": "Shipping",
+      "pillar": "making",
+      "currentHolder": null,
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Daily shipping operations.",
+      "jobDescription": null,
+      "note": "No standalone scorecard.",
+      "coachId": "fulfillment-super",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "fulfillment-super" },
+      "proposedState": { "exists": true, "parentId": "fulfillment-super" }
+    },
+    {
+      "id": "prod-staff",
+      "tabNumber": null,
+      "title": "Production Staff",
+      "shortTitle": "Production Staff",
+      "pillar": "making",
+      "currentHolder": null,
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Production floor associates.",
+      "jobDescription": null,
+      "note": "No standalone scorecard.",
+      "coachId": null,
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "prod-supervisors" },
+      "proposedState": { "exists": true, "parentId": "prod-supervisors" }
+    },
+    {
+      "id": "sanitation",
+      "tabNumber": null,
+      "title": "Sanitation Associates",
+      "shortTitle": "Sanitation",
+      "pillar": "making",
+      "currentHolder": null,
+      "holderStatus": "filled",
+      "location": "Chicago — Oakley (on-site)",
+      "purposeOfRole": "Facility sanitation.",
+      "jobDescription": null,
+      "note": "No standalone scorecard. Report to QA Manager.",
+      "coachId": "qa-manager",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "qa-manager" },
+      "proposedState": { "exists": true, "parentId": "qa-manager" }
+    },
+    {
+      "id": "concierge-ccd",
+      "tabNumber": null,
+      "title": "Chocolate Concierge Team",
+      "shortTitle": "Concierge (CCD)",
+      "pillar": "making",
+      "currentHolder": null,
+      "holderStatus": "filled",
+      "location": "Chicago (hybrid)",
+      "purposeOfRole": "DTC customer service agents.",
+      "jobDescription": null,
+      "note": "No standalone scorecard. Report to Customer Service Manager.",
+      "coachId": "cust-service-mgr",
+      "directSupports": [],
+      "scorecardRef": null,
+      "hasScorecard": false,
+      "initiatives": [],
+      "skills": [],
+      "currentState": { "exists": true, "parentId": "cust-service-mgr" },
+      "proposedState": { "exists": true, "parentId": "cust-service-mgr" }
+    }
+  ],
+
+  "transitions": [
+    {
+      "roleId": "chef-rd",
+      "type": "move",
+      "description": "Moves from Operations (Steve) → Brand & Product Engine (Jen)",
+      "annotation": "R&D feeds the NPD pipeline — pair it with product strategy, not factory operations",
+      "highlight": true,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "qa-manager",
+      "type": "move",
+      "description": "Moves from COO → Director of Operations",
+      "annotation": "QA is an operating function, not a strategic one",
+      "highlight": true,
+      "implementationPhase": 5
+    },
+    {
+      "roleId": "cust-service-mgr",
+      "type": "move",
+      "description": "Moves from COO → Director of Operations",
+      "annotation": "Service execution belongs in Operations",
+      "highlight": true,
+      "implementationPhase": 4
+    },
+    {
+      "roleId": "dir-sales",
+      "type": "new",
+      "description": "New role — consolidates all B2B sales under one leader",
+      "annotation": "Building the B2B Sales organization from scratch",
+      "highlight": true,
+      "implementationPhase": 1
+    },
+    {
+      "roleId": "regional-gm",
+      "type": "move",
+      "description": "Moves from CEO → Director of Sales. Title changes to Retail Sales GM",
+      "annotation": "Retail is a sales channel — belongs under Sales leadership",
+      "highlight": true,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "denise",
+      "type": "move",
+      "description": "Moves from CEO → Director of Sales",
+      "annotation": "Corporate gifting consolidated under Sales",
+      "highlight": false,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "ian",
+      "type": "move",
+      "description": "Moves from CEO → Director of Sales",
+      "annotation": "Corporate gifting consolidated under Sales",
+      "highlight": false,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "product-ops",
+      "type": "new",
+      "description": "New role — closes the historical handoff gap between R&D and Operations",
+      "annotation": "Data/systems seat bridging R&D and Ops",
+      "highlight": true,
+      "implementationPhase": 7
+    },
+    {
+      "roleId": "jr-account-mgr",
+      "type": "new",
+      "description": "EOY 2026 hire — supports B2B sales scaling",
+      "annotation": null,
+      "highlight": false,
+      "implementationPhase": 9
+    },
+    {
+      "roleId": "wholesale-pl",
+      "type": "new",
+      "description": "EOY 2026 hire — wholesale and private label sales",
+      "annotation": null,
+      "highlight": false,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "jr-marketing-coord",
+      "type": "new",
+      "description": "EOY 2026 hire — marketing bandwidth expansion",
+      "annotation": null,
+      "highlight": false,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "sales-account-mgr",
+      "type": "new",
+      "description": "New role template — front-line B2B seller",
+      "annotation": null,
+      "highlight": false,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "procurement-mgr",
+      "type": "rename",
+      "description": "Title changes from Supply Chain Manager → Procurement Manager",
+      "annotation": "Role refocused on sourcing and purchasing",
+      "highlight": false,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "fulfillment-super",
+      "type": "restructure",
+      "description": "Moves from Director of Operations → Ops Manager. Consolidated from two supervisors to one.",
+      "annotation": null,
+      "highlight": false,
+      "implementationPhase": null
+    },
+    {
+      "roleId": "maintenance",
+      "type": "move",
+      "description": "Moves from Director of Operations → Ops Manager",
+      "annotation": null,
+      "highlight": false,
+      "implementationPhase": null
+    }
+  ],
+
+  "implementationSteps": [
+    { "phase": 1, "description": "Hire Sales Leader", "roleId": "dir-sales" },
+    { "phase": 2, "description": "Move IT under Operations", "roleId": null },
+    { "phase": 3, "description": "Create Technology Role for Sarah B and move under IT", "roleId": "cust-tech-ops" },
+    { "phase": 4, "description": "Move Customer Service under Operations Manager", "roleId": "cust-service-mgr" },
+    { "phase": 5, "description": "Quality to report to Director of Operations", "roleId": "qa-manager" },
+    { "phase": 6, "description": "Melissa to assess Quality — right team?", "roleId": "qa-manager" },
+    { "phase": 7, "description": "Create Product Operations Role for Michael", "roleId": "product-ops" },
+    { "phase": 8, "description": "Hire PT Chocolate Concierge", "roleId": null },
+    { "phase": 9, "description": "Begin creating the Junior Account Manager role", "roleId": "jr-account-mgr" }
+  ]
+}
