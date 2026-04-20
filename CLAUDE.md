@@ -57,7 +57,11 @@ The app is data-driven from `vhc-org-data.json` embedded directly (no API calls)
    - `cust-tech-ops` → shows `head-tech` scorecard with "uses Head of Technology scorecard" banner. Also has `⚠️` indicator (Andy flagged as under review 2026-04-18).
    - `denise` and `ian` → show `sales-account-mgr` scorecard with "Corporate Gifting — uses Sales Account Manager scorecard" banner.
 
-4. **Visual aesthetic:** `#1a1a1a` background, `#f5f0e8` cream text, `#c4956a` gold/copper card borders. Pillar colors: burgundy `#722F37` (meaning), teal `#2F5D5C` (making), amber `#B8860B` (selling), purple `#6B5B73` (connective), charcoal `#3d3d3d` (leadership). Serif for role titles, sans-serif for body.
+4. **Visual aesthetic — match vosgeschocolate.com exactly:**
+   - **Colors:** brand purple `#38165f` (primary), dark purple `#3d1152` (accents/CTAs), near-black `#121212` (dark backgrounds), warm off-white `#f6f6f4` (light backgrounds/text on dark), mid gray `#626262` (secondary text), white `#ffffff` (cards/contrast).
+   - **Pillar accent colors** (used sparingly for pips/lines only): burgundy `#722F37` (meaning), teal `#2F5D5C` (making), amber `#B8860B` (selling), dark purple `#3d1152` (connective), brand purple `#38165f` (leadership).
+   - **Fonts:** Chronicle Display (serif) for headings and role titles. Montserrat for body text. Roboto for small UI labels.
+   - **Style:** `border-radius: 0` everywhere — sharp corners, no rounding. No drop shadows. Clean and editorial, not techy. Purple carries the brand; everything else stays quiet.
 
 5. **EOY hire roles** (`holderStatus: "eoy-hire"`) — dashed border, slightly lower opacity until slider reaches 100%.
 
