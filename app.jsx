@@ -306,7 +306,7 @@ function VHCOrgViewer() {
       const rect = canvasRef.current.getBoundingClientRect();
       const scaleX = rect.width / chartBounds.w;
       const scaleY = rect.height / chartBounds.maxY;
-      setCanvasScale(Math.max(0.7, Math.min(scaleY, 1)));
+      setCanvasScale(Math.max(0.35, Math.min(scaleX, scaleY, 1)));
     }
     resize();
     window.addEventListener('resize', resize);
@@ -457,7 +457,7 @@ function VHCOrgViewer() {
         </div>
       </div>
 
-      <div className="canvas" ref={canvasRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', overflow: 'hidden' }}>
+      <div className="canvas" ref={canvasRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', overflow: 'auto' }}>
         <div className="chart-scroll" style={{
           transform: `scale(${canvasScale})`,
           transformOrigin: 'top center',
