@@ -488,6 +488,8 @@ function VHCOrgViewer() {
   }
 
   function renderNPDBox() {
+    const movedSet = STEPS[stepIndex]?.moved;
+    if (movedSet !== null && (!movedSet.has('chef-rd') || !movedSet.has('product-ops'))) return null;
     const ids = ['sr-product-mgr', 'chef-rd', 'product-ops'];
     const positions = ids.map(id => stepLayout.pos[id]);
     if (positions.some(p => !p)) return null;
