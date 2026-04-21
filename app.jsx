@@ -258,9 +258,9 @@ function VHCOrgViewer() {
   // Step 4: Final Proposed
   const STEPS = useMemo(() => {
     const salesMoves = new Set(['dir-sales', 'regional-gm', 'denise', 'ian']);
-    const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super', 'cust-tech-ops']);
+    const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super', 'cust-tech-ops', 'product-ops']);
     const techMoves = new Set(['head-tech']);
-    const otherMoves = new Set(['product-ops', 'jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord']);
+    const otherMoves = new Set(['jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord']);
 
     return [
       { label: 'Current State', moved: new Set(), brief: null },
@@ -279,13 +279,13 @@ function VHCOrgViewer() {
       { label: 'Move Managers', moved: new Set([...techMoves, ...salesMoves, ...managerMoves]),
         brief: {
           title: 'Move Managers',
-          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place. Sarah Bornhorst moves from Customer Service into the new Customer Tech Ops role under Max — refocused on Gorgias and HubSpot.',
+          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place. Sarah Bornhorst joins IT as Customer Tech Ops — and as she does, Michael Sanchez transitions from Ops Assistant to Product Operations under the Sr. Product Manager.',
           rationale: 'The goal is for the CEO and COO to each have 2–3 key leaders they can depend on — so they get answers at the right level without reaching down into the management layer.'
         }},
       { label: 'New Roles', moved: new Set([...techMoves, ...salesMoves, ...managerMoves, ...otherMoves]),
         brief: {
           title: 'New Roles',
-          desc: 'Michael Sanchez transitions from IT Ops Assistant to Product Operations — partnering with the Sr. Product Manager on BOMs, MRP, and Flavor Studio data. Three open seats complete the 2026 structure: Junior Account Manager, Wholesale & Private Label Sales, and Junior Marketing Coordinator.',
+          desc: 'Three open seats complete the 2026 structure: a Junior Account Manager as inside-sales backbone for the SAM team, a Wholesale & Private Label Sales manager to grow the Faire channel, and a Junior Marketing Coordinator to support campaign execution.',
           rationale: 'These moves and hires complete the structure — the roles exist by EOY 2026 pending sourcing decisions.'
         }},
       { label: 'Proposed 2026', moved: null, brief: null },
