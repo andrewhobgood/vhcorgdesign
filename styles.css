@@ -397,6 +397,77 @@ html, body {
 }
 .tweaks input[type="checkbox"] { accent-color: var(--purple); }
 
+/* ── Hint card ───────────────────────────── */
+.hint-card {
+  position: fixed;
+  bottom: 56px;
+  right: 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px 12px;
+  width: 230px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  z-index: 100;
+  animation: hint-in 0.25s ease;
+}
+@keyframes hint-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hint-title {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 10px;
+}
+.hint-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+.hint-key {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 2px 7px;
+  min-width: 88px;
+  text-align: center;
+  white-space: nowrap;
+}
+.hint-auto {
+  font-size: 10px;
+  color: var(--mid);
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+.hint-close {
+  position: absolute;
+  top: 8px; right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--mid);
+  line-height: 1;
+  padding: 2px 4px;
+}
+.hint-close:hover { color: var(--dark); }
+.hint-btn {
+  font-weight: 600;
+  min-width: 32px;
+}
+
 /* ── Responsive ─────────────────────────── */
 @media (max-width: 768px) {
   .topbar { flex-wrap: wrap; padding: 10px 16px; gap: 10px; }

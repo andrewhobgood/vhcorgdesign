@@ -232,6 +232,7 @@ function VHCOrgViewer() {
   const [transitionToast, setTransitionToast] = useState(null);
   const [showTweaks, setShowTweaks] = useState(false);
   const [stepIndex, setStepIndex] = useState(0);
+  const [showHint, setShowHint] = useState(() => !localStorage.getItem('vhc-hint-seen'));
 
   // Per-step: which role IDs have moved to proposed position
   // Step 0: Current State (nobody moved)
@@ -277,6 +278,20 @@ function VHCOrgViewer() {
   const panStart = useRef({ x: 0, y: 0, vx: 0, vy: 0 });
 
   useEffect(() => { viewportRef.current = viewport; }, [viewport]);
+
+  useEffect(() => {
+    if (!showHint) return;
+    const t = setTimeout(() => {
+      setShowHint(false);
+      localStorage.setItem('vhc-hint-seen', '1');
+    }, 7000);
+    return () => clearTimeout(t);
+  }, [showHint]);
+
+  function dismissHint() {
+    setShowHint(false);
+    localStorage.setItem('vhc-hint-seen', '1');
+  }
 
   useEffect(() => { localStorage.setItem('vhc-tweaks', JSON.stringify(tweaks)); }, [tweaks]);
 
@@ -541,6 +556,7 @@ function VHCOrgViewer() {
           <button className="btn primary" onClick={() => setPlaying(true)}>▶ Play All</button>
           <button className="btn" onClick={() => goToStep(stepIndex + 1)} disabled={stepIndex === STEPS.length - 1}>Next →</button>
           <button className="btn" onClick={fitToScreen} title="Fit to screen (double-click canvas)">⊡ Fit</button>
+          <button className="btn hint-btn" onClick={() => setShowHint(true)} title="Navigation help">?</button>
         </div>
       </div>
 
@@ -639,6 +655,19 @@ function VHCOrgViewer() {
             <strong>{transitionToast.title}</strong> — {transitionToast.desc}
             {transitionToast.annotation && <> · <em>{transitionToast.annotation}</em></>}
           </div>
+        </div>
+      )}
+
+      {/* Pan/zoom hint */}
+      {showHint && (
+        <div className="hint-card">
+          <button className="hint-close" onClick={dismissHint}>×</button>
+          <div className="hint-title">Navigating the chart</div>
+          <div className="hint-row"><kbd className="hint-key">Scroll</kbd><span>Zoom in / out</span></div>
+          <div className="hint-row"><kbd className="hint-key">Drag</kbd><span>Pan around</span></div>
+          <div className="hint-row"><kbd className="hint-key">Double-click</kbd><span>Fit to screen</span></div>
+          <div className="hint-row"><kbd className="hint-key">← →</kbd><span>Step through changes</span></div>
+          <div className="hint-auto">Dismisses automatically · press ? to re-show</div>
         </div>
       )}
 

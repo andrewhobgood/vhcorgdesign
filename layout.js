@@ -6,6 +6,7 @@
   const H_GAP = 14;
   const V_GAP = 90;      // vertical space between levels (gives ~34px clearance)
   const STACK_GAP = 16;  // gap between vertically-stacked items in a column group
+  const COL3_ECOM_GAP = 46; // wider gap before stacked/side columns (leaves room for spine)
   const BOARD_Y = 14;
   const LEADERS_Y = 110; // raised to give space for Board→CEO connector
   const L2_Y = 200;      // LEADERS_Y + NODE_H + 34px clearance
@@ -106,19 +107,29 @@
 
     // Bottom-up subtree width calculation
     function calcW(id) {
-      // dir-ecom: three fixed columns
+      // dir-ecom: dynamic column layout
+      // col1=art-director, col2=sr-product-mgr, then stacked (no children), then one col per child-having node
       if (id === 'dir-ecom') {
         const kids = children['dir-ecom'] || [];
-        kids.forEach(c => calcW(c)); // populate stw for all children
+        kids.forEach(c => calcW(c));
         const col1 = kids.filter(c => ECOM_COL1.has(c));
         const col2 = kids.filter(c => ECOM_COL2.has(c));
-        const col3 = kids.filter(c => !ECOM_COL1.has(c) && !ECOM_COL2.has(c));
-        const parts = [];
-        if (col1.length) parts.push(stw[col1[0]] || NODE_W);
-        if (col2.length) parts.push(stw[col2[0]] || NODE_W);
-        if (col3.length) parts.push(NODE_W); // col3 always counts as one column
+        const remaining = kids.filter(c => !ECOM_COL1.has(c) && !ECOM_COL2.has(c));
+        const extraCols = remaining.filter(c => (children[c] || []).length > 0);
+        const stackedNodes = remaining.filter(c => (children[c] || []).length === 0);
+
+        const widths = [];
+        if (col1.length) widths.push(stw[col1[0]] || NODE_W);
+        if (col2.length) widths.push(stw[col2[0]] || NODE_W);
+        if (stackedNodes.length) widths.push(NODE_W);
+        extraCols.forEach(c => widths.push(stw[c] || NODE_W));
+
         let total = 0;
-        parts.forEach((w, i) => { total += w + (i > 0 ? H_GAP : 0); });
+        widths.forEach((w, i) => {
+          // col1→col2 = H_GAP; col2→stacked/extraCols = COL3_ECOM_GAP; extraCol→extraCol = H_GAP
+          const gap = i === 0 ? 0 : i === 2 ? COL3_ECOM_GAP : H_GAP;
+          total += gap + w;
+        });
         stw['dir-ecom'] = Math.max(NODE_W, total);
         return stw['dir-ecom'];
       }
@@ -172,27 +183,35 @@
       const kids = children[parentId] || [];
       if (!kids.length) return;
 
-      // dir-ecom: three-column layout
+      // dir-ecom: dynamic column layout
+      // col1=art-director, col2=sr-product-mgr, stacked (leaf nodes), then one col per child-having node
       if (parentId === 'dir-ecom') {
         const col1 = kids.filter(c => ECOM_COL1.has(c));
         const col2 = kids.filter(c => ECOM_COL2.has(c));
-        const col3 = kids.filter(c => !ECOM_COL1.has(c) && !ECOM_COL2.has(c));
+        const remaining = kids.filter(c => !ECOM_COL1.has(c) && !ECOM_COL2.has(c));
+        const extraCols = remaining.filter(c => (children[c] || []).length > 0);
+        const stackedNodes = remaining.filter(c => (children[c] || []).length === 0);
+
         const parts = [];
         if (col1.length) parts.push({ type: 'single', id: col1[0], w: stw[col1[0]] || NODE_W });
         if (col2.length) parts.push({ type: 'single', id: col2[0], w: stw[col2[0]] || NODE_W });
-        if (col3.length) parts.push({ type: 'col3', ids: col3, w: NODE_W });
+        if (stackedNodes.length) parts.push({ type: 'col3', ids: stackedNodes, w: NODE_W });
+        extraCols.forEach(c => parts.push({ type: 'single', id: c, w: stw[c] || NODE_W }));
 
         let totalW = 0;
-        parts.forEach((p, i) => { totalW += p.w + (i > 0 ? H_GAP : 0); });
+        parts.forEach((p, i) => {
+          p.gapBefore = i === 0 ? 0 : i === 2 ? COL3_ECOM_GAP : H_GAP;
+          totalW += p.gapBefore + p.w;
+        });
         let cx = parentX - totalW / 2;
         parts.forEach(part => {
+          cx += part.gapBefore;
           const x = cx + part.w / 2;
           if (part.type === 'single') {
             pos[part.id] = { x, y: baseY };
             placeChildren(part.id, x, baseY + V_GAP);
           } else {
             placeColumnGroup(part.ids, x, baseY);
-            // Record bus group for spine+stub connector rendering
             busGroups.push({
               parentId: 'dir-ecom',
               ids: part.ids,
@@ -200,7 +219,7 @@
               cardLeftX: x - NODE_W / 2
             });
           }
-          cx += part.w + H_GAP;
+          cx += part.w;
         });
         return;
       }
@@ -221,12 +240,18 @@
           placeChildren(slot.id, x, baseY + V_GAP);
           cx += w + H_GAP;
         } else {
-          // Vertical sibling stack (e.g., denise + ian)
+          // Vertical sibling stack (e.g., denise + ian) — spine+stub connectors
           const x = cx + NODE_W / 2;
           let sy = baseY;
           slot.ids.forEach(sid => {
             pos[sid] = { x, y: sy };
             sy += NODE_H + STACK_GAP;
+          });
+          busGroups.push({
+            parentId,
+            ids: [...slot.ids],
+            spineX: x - NODE_W / 2 - 14,
+            cardLeftX: x - NODE_W / 2
           });
           cx += NODE_W + H_GAP;
         }
