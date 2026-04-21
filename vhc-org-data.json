@@ -2047,7 +2047,7 @@
       ],
       "currentState": {
         "exists": true,
-        "parentId": "coo",
+        "parentId": "sr-product-mgr",
         "note": "Currently under COO, unclear reporting"
       },
       "proposedState": {
