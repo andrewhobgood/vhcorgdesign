@@ -258,8 +258,8 @@ function VHCOrgViewer() {
   // Step 4: Final Proposed
   const STEPS = useMemo(() => {
     const salesMoves = new Set(['dir-sales', 'regional-gm', 'denise', 'ian']);
-    const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super']);
-    const techMoves = new Set(['head-tech', 'cust-tech-ops']);
+    const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super', 'cust-tech-ops']);
+    const techMoves = new Set(['head-tech']);
     const otherMoves = new Set(['product-ops', 'jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord']);
 
     return [
