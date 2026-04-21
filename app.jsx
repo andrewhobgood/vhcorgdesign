@@ -279,8 +279,8 @@ function VHCOrgViewer() {
       { label: 'Move Managers', moved: new Set([...techMoves, ...salesMoves, ...managerMoves]),
         brief: {
           title: 'Move Managers',
-          desc: 'Chef / R&D moves to Brand & Product, formalizing an NPD Team with the Sr. Product Manager and Michael Sanchez (Product Ops). QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place. As Sarah Bornhorst joins IT as Customer Tech Ops, Michael transitions out of his Ops Assistant role and into the NPD Team.',
-          rationale: 'The goal is for the CEO and COO to each have 2–3 key leaders they can depend on — so they get answers at the right level without reaching down into the management layer.'
+          desc: 'Chef / R&D moves under Ecom to formally lead NPD efforts alongside Amanda — with Michael Sanchez stepping into a new Product Ops role as their right-hand on commercialization and go-to-market. Sarah Bornhorst formalizes oversight of customer service and sales technologies by moving under Max in IT. Customer Service completes its transition to Ops, and QA follows — giving the Director of Ops full control over every manager who influences OTIF delivery.',
+          rationale: 'If the Director of Ops doesn\'t control all the managers who affect the schedule, OTIF accountability has nowhere to land — this structure closes that gap.'
         }},
       { label: 'New Roles', moved: new Set([...techMoves, ...salesMoves, ...managerMoves, ...otherMoves]),
         brief: {
