@@ -240,7 +240,7 @@ function VHCOrgViewer() {
   // Step 3: Others (Product Ops, sales roles, EOY hires)
   // Step 4: Final Proposed
   const STEPS = useMemo(() => {
-    const salesMoves = new Set(['dir-sales', 'regional-gm', 'denise', 'ian', 'sales-account-mgr']);
+    const salesMoves = new Set(['dir-sales', 'regional-gm', 'denise', 'ian']);
     const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super']);
     const otherMoves = new Set(['product-ops', 'jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord', 'cust-tech-ops', 'head-tech']);
 

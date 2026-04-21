@@ -1333,8 +1333,8 @@
         "parentId": null
       },
       "proposedState": {
-        "exists": true,
-        "parentId": "dir-sales"
+        "exists": false,
+        "parentId": null
       }
     },
     {
