@@ -264,27 +264,27 @@ function VHCOrgViewer() {
 
     return [
       { label: 'Current State', moved: new Set(), brief: null },
-      { label: 'Sales Organization', moved: salesMoves,
-        brief: {
-          title: 'Sales Organization',
-          desc: 'A new Director of Sales seat unifies all revenue-generating functions under one leader. The Regional GM — retitled Retail Sales GM to reflect the Chicago Metro reality of our boutiques — along with Corporate Gifting (Denise & Ian) and junior account roles consolidate into a dedicated Sales pillar.',
-          rationale: 'One owner for all B2B revenue eliminates the coordination cost of fragmented sales leadership.'
-        }},
-      { label: 'Manager Realignment', moved: new Set([...salesMoves, ...managerMoves]),
-        brief: {
-          title: 'Manager Realignment',
-          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place.',
-          rationale: 'The goal is for the CEO and COO to each have 2–3 key leaders they can depend on — so they get answers at the right level without reaching down into the management layer.'
-        }},
-      { label: 'Technology', moved: new Set([...salesMoves, ...managerMoves, ...techMoves]),
+      { label: 'Technology', moved: techMoves,
         brief: {
           title: 'Technology',
           desc: 'Max Frank (Head of Technology) and Michael Sanchez (currently Ops Assistant in IT) are placed on the chart in their current state. Sarah Bornhorst moves from Customer Service into the new Customer Tech Ops role under Max — refocused on Gorgias and HubSpot.',
           rationale: 'Technology is formalized as a connective service under the COO, giving every pillar a single point of contact for systems, data, and integrations.'
         }},
-      { label: 'EOY Hires', moved: new Set([...salesMoves, ...managerMoves, ...techMoves, ...otherMoves]),
+      { label: 'Sales Organization', moved: new Set([...techMoves, ...salesMoves]),
         brief: {
-          title: 'EOY Hires',
+          title: 'Sales Organization',
+          desc: 'A new Director of Sales seat unifies all revenue-generating functions under one leader. The Regional GM — retitled Retail Sales GM to reflect the Chicago Metro reality of our boutiques — along with Corporate Gifting (Denise & Ian) and junior account roles consolidate into a dedicated Sales pillar.',
+          rationale: 'One owner for all B2B revenue eliminates the coordination cost of fragmented sales leadership.'
+        }},
+      { label: 'Move Managers', moved: new Set([...techMoves, ...salesMoves, ...managerMoves]),
+        brief: {
+          title: 'Move Managers',
+          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place.',
+          rationale: 'The goal is for the CEO and COO to each have 2–3 key leaders they can depend on — so they get answers at the right level without reaching down into the management layer.'
+        }},
+      { label: 'New Roles', moved: new Set([...techMoves, ...salesMoves, ...managerMoves, ...otherMoves]),
+        brief: {
+          title: 'New Roles',
           desc: 'Michael Sanchez transitions from IT Ops Assistant to Product Operations — partnering with the Sr. Product Manager on BOMs, MRP, and Flavor Studio data. Three open seats complete the 2026 structure: Junior Account Manager, Wholesale & Private Label Sales, and Junior Marketing Coordinator.',
           rationale: 'These moves and hires complete the structure — the roles exist by EOY 2026 pending sourcing decisions.'
         }},
