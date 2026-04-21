@@ -251,14 +251,14 @@ function VHCOrgViewer() {
 
   // Per-step: which role IDs have moved to proposed position
   // Step 0: Current State (nobody moved)
-  // Step 1: Directors move (Dir of Sales appears, Retail GM moves under Sales)
-  // Step 2: Managers move (QA, CS to Dir Ops; Chef to Dir Ecom)
-  // Step 3: Others (Product Ops, sales roles, EOY hires)
+  // Step 1: Sales org (Dir of Sales, Regional GM, Denise, Ian)
+  // Step 2: Managers + tech/product roles placed on chart
+  // Step 3: EOY open-seat hires
   // Step 4: Final Proposed
   const STEPS = useMemo(() => {
     const salesMoves = new Set(['dir-sales', 'regional-gm', 'denise', 'ian']);
-    const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super']);
-    const otherMoves = new Set(['product-ops', 'jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord', 'cust-tech-ops', 'head-tech']);
+    const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super', 'head-tech', 'product-ops', 'cust-tech-ops']);
+    const otherMoves = new Set(['jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord']);
 
     return [
       { label: 'Current State', moved: new Set(), brief: null },
@@ -271,14 +271,14 @@ function VHCOrgViewer() {
       { label: 'Manager Realignment', moved: new Set([...salesMoves, ...managerMoves]),
         brief: {
           title: 'Manager Realignment',
-          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. Teresa Diaz\'s role narrows from Supply Chain Manager to Procurement Manager. Carol Fortin is confirmed as sole Fulfillment Supervisor; Natasha Morales\' title aligns to Inventory Specialist, supporting procurement rather than fulfillment. QA and Customer Service consolidate into Operations.',
-          rationale: 'Pillar alignment sharpens coaching chains — every manager now reports to the leader most fluent in their domain.'
+          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place. Head of Technology (Max), Product Ops (Michael Sanchez), and Customer Tech Ops (Sarah Bornhorst) are placed on the chart for the first time — they\'ve been here, just not previously depicted.',
+          rationale: 'The goal is for the CEO and COO to each have 2–3 key leaders they can depend on — so they get answers at the right level without reaching down into the management layer.'
         }},
-      { label: 'New Roles & EOY Hires', moved: new Set([...salesMoves, ...managerMoves, ...otherMoves]),
+      { label: 'EOY Hires', moved: new Set([...salesMoves, ...managerMoves, ...otherMoves]),
         brief: {
-          title: 'New Roles & EOY Hires',
-          desc: 'Head of Technology is formalized under the COO. Michael Sanchez moves into the new Product Ops role. Sarah Bornhorst\'s work is refocused as Customer Tech Ops — leaning into Gorgias and HubSpot — and reports to the Head of Tech so all critical customer-facing tools are guided by the same strategy. A Fulfillment Manager seat is planned for Q4; the Director of Ops will assess whether Carol Fortin advances or the role is sourced externally.',
-          rationale: 'These additions build the connective tissue for scale: technology ownership, product operations, and a fully staffed sales team.'
+          title: 'EOY Hires',
+          desc: 'Three open seats complete the 2026 structure: a Junior Account Manager as inside-sales backbone for the SAM team, a Wholesale & Private Label Sales manager to grow the Faire channel, and a Junior Marketing Coordinator to support campaign execution.',
+          rationale: 'These hires complete the structure — the roles exist by EOY 2026 pending sourcing decisions.'
         }},
       { label: 'Proposed 2026', moved: null, brief: null },
     ];
