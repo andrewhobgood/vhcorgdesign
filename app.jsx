@@ -267,7 +267,7 @@ function VHCOrgViewer() {
       { label: 'Technology', moved: techMoves,
         brief: {
           title: 'Technology',
-          desc: 'Max Frank (Head of Technology) and Michael Sanchez (currently Ops Assistant in IT) are placed on the chart in their current state. Sarah Bornhorst moves from Customer Service into the new Customer Tech Ops role under Max — refocused on Gorgias and HubSpot.',
+          desc: 'Max Frank (Head of Technology) and Michael Sanchez (currently Ops Assistant in IT) are placed on the chart in their current state.',
           rationale: 'Technology is formalized as a connective service under the COO, giving every pillar a single point of contact for systems, data, and integrations.'
         }},
       { label: 'Sales Organization', moved: new Set([...techMoves, ...salesMoves]),
@@ -279,7 +279,7 @@ function VHCOrgViewer() {
       { label: 'Move Managers', moved: new Set([...techMoves, ...salesMoves, ...managerMoves]),
         brief: {
           title: 'Move Managers',
-          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place.',
+          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place. Sarah Bornhorst moves from Customer Service into the new Customer Tech Ops role under Max — refocused on Gorgias and HubSpot.',
           rationale: 'The goal is for the CEO and COO to each have 2–3 key leaders they can depend on — so they get answers at the right level without reaching down into the management layer.'
         }},
       { label: 'New Roles', moved: new Set([...techMoves, ...salesMoves, ...managerMoves, ...otherMoves]),
