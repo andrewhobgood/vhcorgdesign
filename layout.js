@@ -78,6 +78,7 @@
 
     const pos = {};
     const stw = {};
+    const busGroups = [];
 
     // Group sibling ids into layout slots.
     // SIBLING_STACKS members share one column (counted as NODE_W wide).
@@ -191,6 +192,13 @@
             placeChildren(part.id, x, baseY + V_GAP);
           } else {
             placeColumnGroup(part.ids, x, baseY);
+            // Record bus group for spine+stub connector rendering
+            busGroups.push({
+              parentId: 'dir-ecom',
+              ids: part.ids,
+              spineX: x - NODE_W / 2 - 14,
+              cardLeftX: x - NODE_W / 2
+            });
           }
           cx += part.w + H_GAP;
         });
@@ -261,7 +269,7 @@
     pos['ceo'] = { x: ceoX, y: LEADERS_Y };
     pos['coo'] = { x: cooX, y: LEADERS_Y };
 
-    return { pos, depth, children, excluded: EXCLUDE, existing };
+    return { pos, depth, children, excluded: EXCLUDE, existing, busGroups };
   }
 
   window.computeLayout = computeLayout;

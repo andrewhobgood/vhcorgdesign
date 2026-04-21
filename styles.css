@@ -1,6 +1,6 @@
 /* VHC Org Viewer — Vosges Design System */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
   --purple: #440A56;
@@ -21,9 +21,7 @@
   --p-selling: #9a7520;
   --p-connective: #5A2A83;
 
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Roboto', system-ui, sans-serif;
-  --font-accent: 'Montserrat', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -86,7 +84,7 @@ html, body {
 }
 .slider-labels .active { color: var(--purple); }
 .slider-labels .center {
-  color: var(--purple); font-family: var(--font-display);
+  color: var(--purple); font-family: var(--font-body);
   font-size: 13px; font-weight: 500; letter-spacing: 0.02em;
   text-transform: none;
 }
@@ -129,8 +127,9 @@ html, body {
 .btn.primary:hover { background: var(--purple-2); }
 
 /* ── Canvas ─────────────────────────────── */
-.canvas { position: relative; overflow: auto; }
-.chart-scroll { position: relative; }
+.canvas { position: relative; overflow: hidden; cursor: grab; }
+.canvas:active { cursor: grabbing; }
+.chart-scroll { position: absolute; }
 .chart-svg {
   position: absolute; top: 0; left: 0;
   pointer-events: none; overflow: visible;
@@ -181,10 +180,10 @@ html, body {
   letter-spacing: 0.1em; float: right;
 }
 .node .title {
-  font-family: var(--font-display); font-size: 11px; font-weight: 500;
-  color: var(--dark); line-height: 1.2; margin-top: 1px;
+  font-family: var(--font-body); font-size: 11px; font-weight: 600;
+  color: var(--dark); line-height: 1.25; margin-top: 1px;
 }
-.node[data-tier="1"] .title { font-size: 13px; }
+.node[data-tier="1"] .title { font-size: 12px; }
 .node .holder {
   font-family: var(--font-body); font-size: 9px; color: var(--mid);
   margin-top: 2px;
@@ -232,8 +231,8 @@ html, body {
 }
 .sc-kicker .pip { display: inline-block; width: 6px; height: 6px; }
 .sc-title {
-  font-family: var(--font-display); font-size: 28px; font-weight: 400;
-  color: var(--dark); margin: 8px 0 4px; line-height: 1.1;
+  font-family: var(--font-body); font-size: 22px; font-weight: 600;
+  color: var(--dark); margin: 8px 0 4px; line-height: 1.2;
 }
 .sc-holder { font-family: var(--font-body); font-size: 12px; color: var(--mid); }
 .sc-holder .tbd { color: var(--purple-accent); font-style: italic; }
@@ -288,8 +287,9 @@ html, body {
 .sc-kv dd { margin: 0; color: var(--dark); }
 
 .sc-purpose {
-  font-family: var(--font-display); font-size: 16px; font-style: italic;
-  line-height: 1.4; color: var(--dark); margin: 0 0 16px;
+  font-family: var(--font-body); font-size: 14px; font-weight: 400;
+  line-height: 1.6; color: var(--dark); margin: 0 0 16px;
+  border-left: 2px solid var(--purple); padding-left: 12px;
 }
 
 .sc-links { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -307,11 +307,11 @@ html, body {
 .init:first-child { border-top: none; padding-top: 2px; }
 .init-head { display: flex; gap: 12px; align-items: baseline; margin-bottom: 6px; }
 .init-num {
-  font-family: var(--font-display); font-size: 22px; color: var(--purple);
+  font-family: var(--font-body); font-size: 14px; font-weight: 600; color: var(--purple);
   line-height: 1; min-width: 22px;
 }
 .init-name {
-  font-family: var(--font-display); font-size: 15px; line-height: 1.25;
+  font-family: var(--font-body); font-size: 13px; font-weight: 500; line-height: 1.35;
   color: var(--dark); flex: 1;
 }
 .init-kv {

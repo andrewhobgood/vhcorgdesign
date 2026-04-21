@@ -271,7 +271,12 @@ function VHCOrgViewer() {
     try { return JSON.parse(localStorage.getItem('vhc-tweaks') || '{}'); } catch(e) { return {}; }
   });
   const canvasRef = useRef(null);
-  const [canvasScale, setCanvasScale] = useState(1);
+  const [viewport, setViewport] = useState({ scale: 1, x: 0, y: 0 });
+  const viewportRef = useRef(viewport);
+  const isPanning = useRef(false);
+  const panStart = useRef({ x: 0, y: 0, vx: 0, vy: 0 });
+
+  useEffect(() => { viewportRef.current = viewport; }, [viewport]);
 
   useEffect(() => { localStorage.setItem('vhc-tweaks', JSON.stringify(tweaks)); }, [tweaks]);
 
@@ -299,19 +304,58 @@ function VHCOrgViewer() {
     return { minX: Math.max(0, minX - 30), maxX: maxX + 30, maxY: maxY + 30, w: (maxX + 30) - Math.max(0, minX - 30) + 60 };
   }, [data, STEPS]);
 
-  // Auto-scale to fit viewport
-  useEffect(() => {
-    function resize() {
-      if (!canvasRef.current) return;
-      const rect = canvasRef.current.getBoundingClientRect();
-      const scaleX = rect.width / chartBounds.w;
-      const scaleY = rect.height / chartBounds.maxY;
-      setCanvasScale(Math.max(0.35, Math.min(scaleX, scaleY, 1)));
-    }
-    resize();
-    window.addEventListener('resize', resize);
-    return () => window.removeEventListener('resize', resize);
+  // Fit chart to viewport (initial + resize)
+  const fitToScreen = useCallback(() => {
+    if (!canvasRef.current) return;
+    const rect = canvasRef.current.getBoundingClientRect();
+    const scaleX = rect.width / chartBounds.w;
+    const scaleY = rect.height / chartBounds.maxY;
+    const scale = Math.max(0.15, Math.min(scaleX, scaleY, 1));
+    const x = Math.max(0, (rect.width - chartBounds.w * scale) / 2);
+    setViewport({ scale, x, y: 4 });
   }, [chartBounds]);
+
+  useEffect(() => {
+    fitToScreen();
+    window.addEventListener('resize', fitToScreen);
+    return () => window.removeEventListener('resize', fitToScreen);
+  }, [fitToScreen]);
+
+  // Wheel zoom (centered on cursor)
+  useEffect(() => {
+    const el = canvasRef.current;
+    if (!el) return;
+    function onWheel(e) {
+      e.preventDefault();
+      const factor = e.deltaY < 0 ? 1.1 : 0.9;
+      const rect = el.getBoundingClientRect();
+      const mx = e.clientX - rect.left;
+      const my = e.clientY - rect.top;
+      setViewport(v => {
+        const newScale = Math.max(0.15, Math.min(3, v.scale * factor));
+        const ratio = newScale / v.scale;
+        return { scale: newScale, x: mx - ratio * (mx - v.x), y: my - ratio * (my - v.y) };
+      });
+    }
+    el.addEventListener('wheel', onWheel, { passive: false });
+    return () => el.removeEventListener('wheel', onWheel);
+  }, []);
+
+  function onCanvasPointerDown(e) {
+    if (e.target.closest('.node') || e.button !== 0) return;
+    e.currentTarget.setPointerCapture(e.pointerId);
+    isPanning.current = true;
+    panStart.current = { x: e.clientX, y: e.clientY, vx: viewportRef.current.x, vy: viewportRef.current.y };
+  }
+  function onCanvasPointerMove(e) {
+    if (!isPanning.current) return;
+    setViewport(v => ({
+      ...v,
+      x: panStart.current.vx + (e.clientX - panStart.current.x),
+      y: panStart.current.vy + (e.clientY - panStart.current.y)
+    }));
+  }
+  function onCanvasPointerUp() { isPanning.current = false; }
 
   // Tweaks protocol
   useEffect(() => {
@@ -393,14 +437,16 @@ function VHCOrgViewer() {
     return 1;
   }
 
-  // Build edges from stepLayout's children map
+  // Build edges — skip nodes handled by bus (spine+stub) rendering
   function getEdges() {
     const result = [];
     const ch = stepLayout.children;
+    const busIds = new Set((stepLayout.busGroups || []).flatMap(g => g.ids));
     Object.keys(ch).forEach(parentId => {
       const parentPos = stepLayout.pos[parentId];
       if (!parentPos) return;
       ch[parentId].forEach(childId => {
+        if (busIds.has(childId)) return;
         const childPos = stepLayout.pos[childId];
         if (!childPos) return;
         const child = data.roles.find(r => r.id === childId);
@@ -413,6 +459,48 @@ function VHCOrgViewer() {
       });
     });
     return result;
+  }
+
+  // Bus edges: vertical spine + horizontal stubs for col3 nodes under dir-ecom
+  function getBusEdges() {
+    const NODE_H = 56;
+    return (stepLayout.busGroups || []).flatMap(group => {
+      const parentPos = stepLayout.pos[group.parentId];
+      if (!parentPos) return [];
+      const validIds = group.ids.filter(id => stepLayout.pos[id]);
+      if (!validIds.length) return [];
+
+      const { spineX, cardLeftX } = group;
+      const parentBottom = parentPos.y + NODE_H;
+      const midY = parentBottom + 12;
+      const stubYs = validIds.map(id => stepLayout.pos[id].y + NODE_H / 2);
+      const firstStubY = stubYs[0];
+      const lastStubY = stubYs[stubYs.length - 1];
+      const color = '#A5A5A5';
+
+      const els = [
+        // Parent → top of spine
+        <path key={group.parentId + '-bus-top'} className="edge"
+          d={`M ${parentPos.x} ${parentBottom} L ${parentPos.x} ${midY} L ${spineX} ${midY} L ${spineX} ${firstStubY}`}
+          stroke={color} style={{ opacity: 0.5 }} />,
+        // Spine (first stub to last stub)
+        firstStubY < lastStubY && (
+          <line key={group.parentId + '-spine'} className="edge"
+            x1={spineX} y1={firstStubY} x2={spineX} y2={lastStubY}
+            stroke={color} style={{ opacity: 0.5 }} />
+        ),
+        // Horizontal stubs
+        ...validIds.map((id, i) => {
+          const child = data.roles.find(r => r.id === id);
+          return (
+            <line key={id + '-stub'} className="edge"
+              x1={spineX} y1={stubYs[i]} x2={cardLeftX} y2={stubYs[i]}
+              stroke={getPillarColor(child?.pillar)} style={{ opacity: 0.6 }} />
+          );
+        })
+      ].filter(Boolean);
+      return els;
+    });
   }
 
   // Board/CEO/COO positions follow step
@@ -450,21 +538,24 @@ function VHCOrgViewer() {
 
         <div className="topbar-right">
           <button className="btn" onClick={() => goToStep(stepIndex - 1)} disabled={stepIndex === 0}>← Back</button>
-          <button className="btn primary" onClick={() => setPlaying(true)}>
-            ▶ Play All
-          </button>
+          <button className="btn primary" onClick={() => setPlaying(true)}>▶ Play All</button>
           <button className="btn" onClick={() => goToStep(stepIndex + 1)} disabled={stepIndex === STEPS.length - 1}>Next →</button>
+          <button className="btn" onClick={fitToScreen} title="Fit to screen (double-click canvas)">⊡ Fit</button>
         </div>
       </div>
 
-      <div className="canvas" ref={canvasRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', overflow: 'auto' }}>
+      <div className="canvas" ref={canvasRef}
+        onPointerDown={onCanvasPointerDown}
+        onPointerMove={onCanvasPointerMove}
+        onPointerUp={onCanvasPointerUp}
+        onDoubleClick={fitToScreen}
+      >
         <div className="chart-scroll" style={{
-          transform: `scale(${canvasScale})`,
-          transformOrigin: 'top center',
+          transform: `translate(${viewport.x}px, ${viewport.y}px) scale(${viewport.scale})`,
+          transformOrigin: '0 0',
           width: chartBounds.w,
           height: chartBounds.maxY,
-          flexShrink: 0,
-          position: 'relative'
+          position: 'absolute'
         }}>
           <div className="board-rule" style={{ position: 'absolute', top: 10, left: 0, right: 0 }}>
             <span className="line"></span>
@@ -489,6 +580,7 @@ function VHCOrgViewer() {
             {getEdges().map(e => (
               <path key={e.id} className="edge" d={e.path} stroke={e.stroke} style={{ opacity: e.op }} />
             ))}
+            {getBusEdges()}
           </svg>
 
           {/* Nodes */}
