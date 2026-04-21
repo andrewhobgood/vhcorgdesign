@@ -7,6 +7,7 @@
   const V_GAP = 90;      // vertical space between levels (gives ~34px clearance)
   const STACK_GAP = 16;  // gap between vertically-stacked items in a column group
   const COL3_ECOM_GAP = 46; // wider gap before stacked/side columns (leaves room for spine)
+  const SIBLING_SLOT_W = NODE_W + 32; // sibling stack slot wider than NODE_W to reserve left-side spine space
   const BOARD_Y = 14;
   const LEADERS_Y = 110; // raised to give space for Board→CEO connector
   const L2_Y = 200;      // LEADERS_Y + NODE_H + 34px clearance
@@ -145,7 +146,7 @@
           t += calcW(slot.id);
         } else {
           slot.ids.forEach(sid => calcW(sid)); // calc widths even if stacked
-          t += NODE_W; // stacked group counts as one node wide
+          t += SIBLING_SLOT_W; // wider to reserve left-side spine space
         }
       });
       stw[id] = Math.max(NODE_W, t);
@@ -229,7 +230,7 @@
       let totalW = 0;
       slots.forEach((slot, i) => {
         if (i > 0) totalW += H_GAP;
-        totalW += slot.type === 'single' ? stw[slot.id] : NODE_W;
+        totalW += slot.type === 'single' ? stw[slot.id] : SIBLING_SLOT_W;
       });
       let cx = parentX - totalW / 2;
       slots.forEach(slot => {
@@ -240,8 +241,8 @@
           placeChildren(slot.id, x, baseY + V_GAP);
           cx += w + H_GAP;
         } else {
-          // Vertical sibling stack (e.g., denise + ian) — spine+stub connectors
-          const x = cx + NODE_W / 2;
+          // Vertical sibling stack — card placed at right of wider slot, leaving left room for spine
+          const x = cx + SIBLING_SLOT_W - NODE_W / 2;
           let sy = baseY;
           slot.ids.forEach(sid => {
             pos[sid] = { x, y: sy };
@@ -253,7 +254,7 @@
             spineX: x - NODE_W / 2 - 14,
             cardLeftX: x - NODE_W / 2
           });
-          cx += NODE_W + H_GAP;
+          cx += SIBLING_SLOT_W + H_GAP;
         }
       });
     }
@@ -271,7 +272,7 @@
       let w = 0;
       slots.forEach((slot, i) => {
         if (i > 0) w += H_GAP;
-        w += slot.type === 'single' ? stw[slot.id] : NODE_W;
+        w += slot.type === 'single' ? stw[slot.id] : SIBLING_SLOT_W;
       });
       return w;
     }
