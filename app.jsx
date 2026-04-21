@@ -285,7 +285,7 @@ function VHCOrgViewer() {
       { label: 'New Roles', moved: new Set([...techMoves, ...salesMoves, ...managerMoves, ...otherMoves]),
         brief: {
           title: 'New Roles',
-          desc: 'Three open seats complete the 2026 structure: a Junior Account Manager as inside-sales backbone for the SAM team, a Wholesale & Private Label Sales manager to grow the Faire channel, and a Junior Marketing Coordinator to support campaign execution.',
+          desc: 'Three open seats complete the 2026 structure: a Junior Account Manager as inside-sales backbone for the SAM team, a Wholesale & Private Label Sales manager to grow the Faire channel, develop new wholesale business, and partner with the COO on Private Label opportunities, and a Junior Marketing Coordinator to support campaign execution.',
           rationale: 'These moves and hires complete the structure — the roles exist by EOY 2026 pending sourcing decisions.'
         }},
       { label: 'Proposed 2026', moved: null, brief: null },
