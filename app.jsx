@@ -252,13 +252,15 @@ function VHCOrgViewer() {
   // Per-step: which role IDs have moved to proposed position
   // Step 0: Current State (nobody moved)
   // Step 1: Sales org (Dir of Sales, Regional GM, Denise, Ian)
-  // Step 2: Managers + tech/product roles placed on chart
-  // Step 3: EOY open-seat hires
+  // Step 2: Manager realignment (QA, CS, Chef, Procurement, Fulfillment)
+  // Step 3: Technology (head-tech, cust-tech-ops; Michael appears in current state under Max)
+  // Step 4: EOY hires (Michael moves to Product, 3 open seats)
   // Step 4: Final Proposed
   const STEPS = useMemo(() => {
     const salesMoves = new Set(['dir-sales', 'regional-gm', 'denise', 'ian']);
-    const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super', 'head-tech', 'product-ops', 'cust-tech-ops']);
-    const otherMoves = new Set(['jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord']);
+    const managerMoves = new Set(['qa-manager', 'cust-service-mgr', 'chef-rd', 'procurement-mgr', 'fulfillment-super']);
+    const techMoves = new Set(['head-tech', 'cust-tech-ops']);
+    const otherMoves = new Set(['product-ops', 'jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord']);
 
     return [
       { label: 'Current State', moved: new Set(), brief: null },
@@ -271,14 +273,20 @@ function VHCOrgViewer() {
       { label: 'Manager Realignment', moved: new Set([...salesMoves, ...managerMoves]),
         brief: {
           title: 'Manager Realignment',
-          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place. Head of Technology (Max), Product Ops (Michael Sanchez), and Customer Tech Ops (Sarah Bornhorst) are placed on the chart for the first time — they\'ve been here, just not previously depicted.',
+          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place.',
           rationale: 'The goal is for the CEO and COO to each have 2–3 key leaders they can depend on — so they get answers at the right level without reaching down into the management layer.'
         }},
-      { label: 'EOY Hires', moved: new Set([...salesMoves, ...managerMoves, ...otherMoves]),
+      { label: 'Technology', moved: new Set([...salesMoves, ...managerMoves, ...techMoves]),
+        brief: {
+          title: 'Technology',
+          desc: 'Max Frank (Head of Technology) and Michael Sanchez (currently Ops Assistant in IT) are placed on the chart in their current state. Sarah Bornhorst moves from Customer Service into the new Customer Tech Ops role under Max — refocused on Gorgias and HubSpot.',
+          rationale: 'Technology is formalized as a connective service under the COO, giving every pillar a single point of contact for systems, data, and integrations.'
+        }},
+      { label: 'EOY Hires', moved: new Set([...salesMoves, ...managerMoves, ...techMoves, ...otherMoves]),
         brief: {
           title: 'EOY Hires',
-          desc: 'Three open seats complete the 2026 structure: a Junior Account Manager as inside-sales backbone for the SAM team, a Wholesale & Private Label Sales manager to grow the Faire channel, and a Junior Marketing Coordinator to support campaign execution.',
-          rationale: 'These hires complete the structure — the roles exist by EOY 2026 pending sourcing decisions.'
+          desc: 'Michael Sanchez transitions from IT Ops Assistant to Product Operations — partnering with the Sr. Product Manager on BOMs, MRP, and Flavor Studio data. Three open seats complete the 2026 structure: Junior Account Manager, Wholesale & Private Label Sales, and Junior Marketing Coordinator.',
+          rationale: 'These moves and hires complete the structure — the roles exist by EOY 2026 pending sourcing decisions.'
         }},
       { label: 'Proposed 2026', moved: null, brief: null },
     ];
@@ -636,7 +644,7 @@ function VHCOrgViewer() {
                 key={r.id}
                 role={r}
                 pos={pos}
-                state={state}
+                state={(STEPS[stepIndex]?.moved === null || STEPS[stepIndex]?.moved?.has(r.id)) ? 'proposedState' : 'currentState'}
                 tier={nodeTier(r)}
                 selected={selectedId === r.id}
                 pulsing={pulsingId === r.id}

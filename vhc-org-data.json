@@ -1189,8 +1189,9 @@
         "Comfortable partnering with creative and operational stakeholders"
       ],
       "currentState": {
-        "exists": false,
-        "parentId": null
+        "exists": true,
+        "parentId": "head-tech",
+        "title": "Ops Assistant"
       },
       "proposedState": {
         "exists": true,
