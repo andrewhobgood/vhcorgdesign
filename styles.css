@@ -339,22 +339,48 @@ html, body {
   background: var(--cream);
 }
 
-/* ── Toast ──────────────────────────────── */
-.transition-toast {
-  position: fixed; left: 50%; transform: translateX(-50%);
-  bottom: 28px; background: var(--white); border: 1px solid var(--border);
-  padding: 10px 18px; display: flex; align-items: center; gap: 12px;
-  font-family: var(--font-body); font-size: 11px; color: var(--dark);
-  z-index: 15; max-width: 600px; opacity: 0; transition: opacity .3s;
-  pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* ── Step Brief ──────────────────────────── */
+.step-brief {
+  position: fixed; top: 72px; left: 20px;
+  width: 280px; background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--purple);
+  padding: 18px 20px 16px;
+  z-index: 10; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  animation: brief-in 0.25s ease;
 }
-.transition-toast.show { opacity: 1; }
-.transition-toast .kicker {
-  font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--purple); white-space: nowrap; font-weight: 500;
+@keyframes brief-in {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
-.transition-toast .sep { width: 1px; height: 16px; background: var(--border); }
-.transition-toast em { font-style: italic; color: var(--mid); font-size: 11px; }
+.step-brief-badge {
+  font-size: 9px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--purple); margin-bottom: 10px;
+  font-family: var(--font-body);
+}
+.step-brief-title {
+  font-size: 18px; font-weight: 600; line-height: 1.2;
+  margin: 0 0 12px; color: var(--dark); font-family: var(--font-display);
+}
+.step-brief-desc {
+  font-size: 13px; line-height: 1.65; color: var(--dark);
+  margin: 0 0 14px; font-family: var(--font-body);
+}
+.step-brief-rationale {
+  font-size: 12px; font-style: italic; color: var(--mid);
+  border-left: 2px solid var(--border); padding-left: 10px;
+  line-height: 1.55; margin: 0; font-family: var(--font-body);
+}
+.step-brief-close {
+  position: absolute; top: 10px; right: 12px;
+  background: none; border: none; cursor: pointer; font-size: 16px;
+  color: var(--mid); padding: 2px 4px;
+}
+.step-brief-close:hover { color: var(--dark); }
+.slider-center-btn {
+  background: none; border: none; cursor: pointer;
+  font: inherit; color: inherit; padding: 0;
+}
 
 /* ── Legend ──────────────────────────────── */
 .legend {
@@ -476,7 +502,7 @@ html, body {
   .btn { padding: 8px 10px; font-size: 9px; }
   .scorecard { width: 100%; min-width: unset; max-width: unset; }
   .legend { display: none; }
-  .transition-toast { left: 10px; right: 10px; transform: none; max-width: unset; }
+
 }
 
 /* ── Scrollbar ──────────────────────────── */

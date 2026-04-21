@@ -223,13 +223,28 @@ function PillarHeader({ name, color, x, y }) {
   );
 }
 
+function StepBrief({ step, stepIndex, totalSteps, onDismiss, onReopen }) {
+  if (!step) return null;
+  const changeNum = stepIndex;
+  const totalChanges = totalSteps - 2;
+  return (
+    <div className="step-brief">
+      <button className="step-brief-close" onClick={onDismiss}>×</button>
+      <div className="step-brief-badge">Change {changeNum} of {totalChanges}</div>
+      <h3 className="step-brief-title">{step.title}</h3>
+      <p className="step-brief-desc">{step.desc}</p>
+      <blockquote className="step-brief-rationale">{step.rationale}</blockquote>
+    </div>
+  );
+}
+
 function VHCOrgViewer() {
   const data = window.ORG_DATA;
   const [selectedId, setSelectedId] = useState(null);
   const [pulsingId, setPulsingId] = useState(null);
   const [tooltip, setTooltip] = useState(null);
   const [playing, setPlaying] = useState(false);
-  const [transitionToast, setTransitionToast] = useState(null);
+  const [briefDismissed, setBriefDismissed] = useState(false);
   const [showTweaks, setShowTweaks] = useState(false);
   const [stepIndex, setStepIndex] = useState(0);
   const [showHint, setShowHint] = useState(() => !localStorage.getItem('vhc-hint-seen'));
@@ -246,14 +261,26 @@ function VHCOrgViewer() {
     const otherMoves = new Set(['product-ops', 'jr-account-mgr', 'wholesale-pl', 'jr-marketing-coord', 'cust-tech-ops', 'head-tech']);
 
     return [
-      { label: 'Current State', moved: new Set(), toast: null },
+      { label: 'Current State', moved: new Set(), brief: null },
       { label: 'Sales Organization', moved: salesMoves,
-        toast: { title: 'Sales Organization', desc: 'Director of Sales created; Retail GM, Corporate Gifting, and Sales roles consolidate under Sales', annotation: 'One leader accountable for all B2B revenue' } },
+        brief: {
+          title: 'Sales Organization',
+          desc: 'A new Director of Sales seat unifies all revenue-generating functions under one leader. The Regional GM — retitled Retail Sales GM to reflect the Chicago Metro reality of our boutiques — along with Corporate Gifting (Denise & Ian) and junior account roles consolidate into a dedicated Sales pillar.',
+          rationale: 'One owner for all B2B revenue eliminates the coordination cost of fragmented sales leadership.'
+        }},
       { label: 'Manager Realignment', moved: new Set([...salesMoves, ...managerMoves]),
-        toast: { title: 'Manager Realignment', desc: 'Chef/R&D → Brand & Product; QA & Customer Service → Operations', annotation: 'Aligning managers to the right pillars' } },
+        brief: {
+          title: 'Manager Realignment',
+          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. Teresa Diaz\'s role narrows from Supply Chain Manager to Procurement Manager. Carol Fortin is confirmed as sole Fulfillment Supervisor; Natasha Morales\' title aligns to Inventory Specialist, supporting procurement rather than fulfillment. QA and Customer Service consolidate into Operations.',
+          rationale: 'Pillar alignment sharpens coaching chains — every manager now reports to the leader most fluent in their domain.'
+        }},
       { label: 'New Roles & EOY Hires', moved: new Set([...salesMoves, ...managerMoves, ...otherMoves]),
-        toast: { title: 'New Roles & EOY Hires', desc: 'Head of Tech formalized under COO; Product Ops, Customer Tech Ops, and EOY hires', annotation: 'Filling in the new structure' } },
-      { label: 'Proposed 2026', moved: null, toast: null },
+        brief: {
+          title: 'New Roles & EOY Hires',
+          desc: 'Head of Technology is formalized under the COO. Michael Sanchez moves into the new Product Ops role. Sarah Bornhorst\'s work is refocused as Customer Tech Ops — leaning into Gorgias and HubSpot — and reports to the Head of Tech so all critical customer-facing tools are guided by the same strategy. A Fulfillment Manager seat is planned for Q4; the Director of Ops will assess whether Carol Fortin advances or the role is sourced externally.',
+          rationale: 'These additions build the connective tissue for scale: technology ownership, product operations, and a fully staffed sales team.'
+        }},
+      { label: 'Proposed 2026', moved: null, brief: null },
     ];
   }, []);
 
@@ -263,10 +290,10 @@ function VHCOrgViewer() {
     setPlaying(false);
   }, [STEPS]);
 
-  // Toast follows step
+  // Reset brief when step changes so it re-appears on each new step
   useEffect(() => {
-    setTransitionToast(STEPS[stepIndex]?.toast || null);
-  }, [stepIndex, STEPS]);
+    setBriefDismissed(false);
+  }, [stepIndex]);
 
   const [tweaks, setTweaks] = useState(() => {
     try { return JSON.parse(localStorage.getItem('vhc-tweaks') || '{}'); } catch(e) { return {}; }
@@ -539,9 +566,9 @@ function VHCOrgViewer() {
         <div className="slider-wrap">
           <div className="slider-labels">
             <span className={stepIndex === 0 ? 'active' : ''}>Current</span>
-            <span className="center">
+            <button className="slider-center-btn" onClick={() => setBriefDismissed(false)}>
               {STEPS[stepIndex]?.label || ''}
-            </span>
+            </button>
             <span className={stepIndex === STEPS.length - 1 ? 'active' : ''}>Proposed 2026</span>
           </div>
           <div className="slider-track-wrap">
@@ -646,16 +673,14 @@ function VHCOrgViewer() {
         </div>
       )}
 
-      {/* Transition toast */}
-      {transitionToast && (
-        <div className="transition-toast show">
-          <div className="kicker">{stepIndex} of {STEPS.length - 1}</div>
-          <div className="sep"></div>
-          <div>
-            <strong>{transitionToast.title}</strong> — {transitionToast.desc}
-            {transitionToast.annotation && <> · <em>{transitionToast.annotation}</em></>}
-          </div>
-        </div>
+      {/* Step brief card */}
+      {STEPS[stepIndex]?.brief && !briefDismissed && (
+        <StepBrief
+          step={STEPS[stepIndex].brief}
+          stepIndex={stepIndex}
+          totalSteps={STEPS.length}
+          onDismiss={() => setBriefDismissed(true)}
+        />
       )}
 
       {/* Pan/zoom hint */}
@@ -692,11 +717,6 @@ function VHCOrgViewer() {
             <input type="checkbox"
               checked={!!tweaks.autoLoop}
               onChange={e => setTweaks(t => ({ ...t, autoLoop: e.target.checked }))} />
-          </label>
-          <label>Show toast
-            <input type="checkbox"
-              checked={tweaks.toast !== false}
-              onChange={e => setTweaks(t => ({ ...t, toast: e.target.checked }))} />
           </label>
         </div>
       )}
