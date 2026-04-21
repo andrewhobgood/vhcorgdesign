@@ -189,10 +189,16 @@ html, body {
   margin-top: 2px;
 }
 .node .holder.tbd { color: var(--purple-accent); font-style: italic; }
-.node.eoy { border-style: dashed; }
-.node.eoy .holder::before {
-  content: 'H2 · '; color: var(--mid); font-weight: 500;
+.node.eoy {
+  background: var(--purple);
+  border-color: var(--purple);
 }
+.node.eoy .title { color: var(--white); }
+.node.eoy .holder { color: rgba(255,255,255,0.6); }
+.node.eoy .holder::before {
+  content: 'H2 · '; color: rgba(255,255,255,0.45); font-weight: 500;
+}
+.node.eoy:hover { border-color: var(--purple-2); background: var(--purple-2); }
 
 /* ── Edges ──────────────────────────────── */
 .peer-line { stroke: var(--mid); stroke-width: 1; stroke-dasharray: 3 4; fill: none; }
