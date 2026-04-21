@@ -23,6 +23,7 @@
   //   col3: everything else, stacked vertically
   const ECOM_COL1 = new Set(['art-director']);
   const ECOM_COL2 = new Set(['sr-product-mgr']);
+  const ECOM_COL3 = new Set(['chef-rd']); // placed adjacent to col2 for NPD Team grouping
 
   // Sibling groups that share one column (stacked vertically) to save horizontal space
   const SIBLING_STACKS = [new Set(['denise', 'ian'])];
@@ -115,22 +116,22 @@
         kids.forEach(c => calcW(c));
         const col1 = kids.filter(c => ECOM_COL1.has(c));
         const col2 = kids.filter(c => ECOM_COL2.has(c));
-        const remaining = kids.filter(c => !ECOM_COL1.has(c) && !ECOM_COL2.has(c));
+        const col3 = kids.filter(c => ECOM_COL3.has(c));
+        const remaining = kids.filter(c => !ECOM_COL1.has(c) && !ECOM_COL2.has(c) && !ECOM_COL3.has(c));
         const extraCols = remaining.filter(c => (children[c] || []).length > 0);
         const stackedNodes = remaining.filter(c => (children[c] || []).length === 0);
 
-        const widths = [];
-        if (col1.length) widths.push(stw[col1[0]] || NODE_W);
-        if (col2.length) widths.push(stw[col2[0]] || NODE_W);
-        if (stackedNodes.length) widths.push(NODE_W);
-        extraCols.forEach(c => widths.push(stw[c] || NODE_W));
+        // Parts: col1, col2, col3(chef-rd adjacent to col2), stack, extraCols
+        // Gap: H_GAP between named cols; COL3_ECOM_GAP before the remaining stack/extraCols
+        const parts = [];
+        if (col1.length) parts.push({ w: stw[col1[0]] || NODE_W, isStack: false });
+        if (col2.length) parts.push({ w: stw[col2[0]] || NODE_W, isStack: false });
+        if (col3.length) parts.push({ w: stw[col3[0]] || NODE_W, isStack: false });
+        if (stackedNodes.length) parts.push({ w: NODE_W, isStack: true });
+        extraCols.forEach(c => parts.push({ w: stw[c] || NODE_W, isStack: false }));
 
         let total = 0;
-        widths.forEach((w, i) => {
-          // col1→col2 = H_GAP; col2→stacked/extraCols = COL3_ECOM_GAP; extraCol→extraCol = H_GAP
-          const gap = i === 0 ? 0 : i === 2 ? COL3_ECOM_GAP : H_GAP;
-          total += gap + w;
-        });
+        parts.forEach((p, i) => { total += (i === 0 ? 0 : p.isStack ? COL3_ECOM_GAP : H_GAP) + p.w; });
         stw['dir-ecom'] = Math.max(NODE_W, total);
         return stw['dir-ecom'];
       }
@@ -189,19 +190,21 @@
       if (parentId === 'dir-ecom') {
         const col1 = kids.filter(c => ECOM_COL1.has(c));
         const col2 = kids.filter(c => ECOM_COL2.has(c));
-        const remaining = kids.filter(c => !ECOM_COL1.has(c) && !ECOM_COL2.has(c));
+        const col3 = kids.filter(c => ECOM_COL3.has(c));
+        const remaining = kids.filter(c => !ECOM_COL1.has(c) && !ECOM_COL2.has(c) && !ECOM_COL3.has(c));
         const extraCols = remaining.filter(c => (children[c] || []).length > 0);
         const stackedNodes = remaining.filter(c => (children[c] || []).length === 0);
 
         const parts = [];
-        if (col1.length) parts.push({ type: 'single', id: col1[0], w: stw[col1[0]] || NODE_W });
-        if (col2.length) parts.push({ type: 'single', id: col2[0], w: stw[col2[0]] || NODE_W });
-        if (stackedNodes.length) parts.push({ type: 'col3', ids: stackedNodes, w: NODE_W });
-        extraCols.forEach(c => parts.push({ type: 'single', id: c, w: stw[c] || NODE_W }));
+        if (col1.length) parts.push({ type: 'single', id: col1[0], w: stw[col1[0]] || NODE_W, isStack: false });
+        if (col2.length) parts.push({ type: 'single', id: col2[0], w: stw[col2[0]] || NODE_W, isStack: false });
+        if (col3.length) parts.push({ type: 'single', id: col3[0], w: stw[col3[0]] || NODE_W, isStack: false });
+        if (stackedNodes.length) parts.push({ type: 'col3', ids: stackedNodes, w: NODE_W, isStack: true });
+        extraCols.forEach(c => parts.push({ type: 'single', id: c, w: stw[c] || NODE_W, isStack: false }));
 
         let totalW = 0;
         parts.forEach((p, i) => {
-          p.gapBefore = i === 0 ? 0 : i === 2 ? COL3_ECOM_GAP : H_GAP;
+          p.gapBefore = i === 0 ? 0 : p.isStack ? COL3_ECOM_GAP : H_GAP;
           totalW += p.gapBefore + p.w;
         });
         let cx = parentX - totalW / 2;

@@ -279,7 +279,7 @@ function VHCOrgViewer() {
       { label: 'Move Managers', moved: new Set([...techMoves, ...salesMoves, ...managerMoves]),
         brief: {
           title: 'Move Managers',
-          desc: 'Chef / R&D joins Brand & Product under the Director of Ecom. QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place. Sarah Bornhorst joins IT as Customer Tech Ops — and as she does, Michael Sanchez transitions from Ops Assistant to Product Operations under the Sr. Product Manager.',
+          desc: 'Chef / R&D moves to Brand & Product, formalizing an NPD Team with the Sr. Product Manager and Michael Sanchez (Product Ops). QA and Customer Service consolidate into Operations; Procurement and Fulfillment confirmed in place. As Sarah Bornhorst joins IT as Customer Tech Ops, Michael transitions out of his Ops Assistant role and into the NPD Team.',
           rationale: 'The goal is for the CEO and COO to each have 2–3 key leaders they can depend on — so they get answers at the right level without reaching down into the management layer.'
         }},
       { label: 'New Roles', moved: new Set([...techMoves, ...salesMoves, ...managerMoves, ...otherMoves]),
@@ -487,6 +487,31 @@ function VHCOrgViewer() {
     return 1;
   }
 
+  function renderNPDBox() {
+    const ids = ['sr-product-mgr', 'chef-rd', 'product-ops'];
+    const positions = ids.map(id => stepLayout.pos[id]);
+    if (positions.some(p => !p)) return null;
+    const NW = 130, NH = 56, PAD = 12, TOP_PAD = 20;
+    const xs = positions.map(p => p.x);
+    const ys = positions.map(p => p.y);
+    const x1 = Math.min(...xs) - NW / 2 - PAD;
+    const y1 = Math.min(...ys) - TOP_PAD;
+    const x2 = Math.max(...xs) + NW / 2 + PAD;
+    const y2 = Math.max(...ys) + NH + PAD;
+    return (
+      <g>
+        <rect x={x1} y={y1} width={x2 - x1} height={y2 - y1}
+          fill="rgba(68,10,86,0.03)" stroke="rgba(68,10,86,0.3)"
+          strokeWidth="1" strokeDasharray="5 3" rx="6" />
+        <text x={(x1 + x2) / 2} y={y1 + 13}
+          textAnchor="middle" fontSize="8" fontWeight="700"
+          fill="rgba(68,10,86,0.5)" letterSpacing="1.5">
+          NPD TEAM
+        </text>
+      </g>
+    );
+  }
+
   // Build edges — skip nodes handled by bus (spine+stub) rendering
   function getEdges() {
     const result = [];
@@ -628,6 +653,7 @@ function VHCOrgViewer() {
                 x2={pos_coo.x - 120} y2={pos_coo.y + 35} />
             )}
 
+            {renderNPDBox()}
             {getEdges().map(e => (
               <path key={e.id} className="edge" d={e.path} stroke={e.stroke} style={{ opacity: e.op }} />
             ))}
